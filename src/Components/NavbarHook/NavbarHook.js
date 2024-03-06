@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { IoClose, IoMenu } from "react-icons/io5";
+import { NavLink, Link } from "react-router-dom";
+import { IoClose, IoMenu, IoChevronDown } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
 import "./NavbarHook.css";
 
 const NavbarHook = () => {
   // State to manage the open/close state of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   // Media query to determine if the device is mobile
   const isMobile = useMediaQuery({ maxWidth: "1100px" });
 
@@ -22,6 +22,11 @@ const NavbarHook = () => {
       setIsMenuOpen(false);
     }
   };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
 
   // Function to render navigation links
   const renderNavLinks = () => {
@@ -75,14 +80,33 @@ const NavbarHook = () => {
             In Memoriam
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/get-involved"
-            className={linkClassName}
-            onClick={closeMobileMenu}
+        <li
+          className="dropdown"
+          onClick={isMobile ? toggleDropdown : undefined}
+        >
+          <div className={linkClassName}>
+            Get Involved<IoChevronDown className="icon" />
+          </div>
+          <div
+            className={`dropdown-content ${
+              isDropdownOpen && isMobile ? "show-dropdown" : ""
+            }`}
           >
-            Get Involved
-          </NavLink>
+            <NavLink
+              to="/volunteer"
+              className={linkClassName}
+              onClick={closeMobileMenu}
+            >
+              Volunteer
+            </NavLink>
+            <NavLink
+              to="/become-a-foster-home"
+              className={linkClassName}
+              onClick={closeMobileMenu}
+            >
+              Become a Foster Home
+            </NavLink>
+          </div>
         </li>
         <li>
           <NavLink
@@ -96,11 +120,11 @@ const NavbarHook = () => {
         {/* Language button */}
         <li>
           <NavLink
-            to="/language"
+            to="/hungarian"
             className={buttonClassName}
             onClick={closeMobileMenu}
           >
-            Hungaran
+            Hungarian
           </NavLink>
         </li>
       </ul>
