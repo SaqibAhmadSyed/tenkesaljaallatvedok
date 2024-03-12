@@ -8,13 +8,12 @@ const Aboutus = () => {
       <p className="content">
         Coming soon. In the meantime, visit us on our Facebook page.
         <br />
-        <a href="https://www.facebook.com/profile.php?id=100064767426529" target="blank">
+        <a href="https://www.facebook.com/profile.php?id=100064767426529" target="_blank" className="fb__link">
           https://www.facebook.com/profile.php?id=100064767426529
         </a>
       </p>
     </div>
   );
 };
-
 
 export default Aboutus;

@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import NavbarHook from "./Components/NavbarHook/NavbarHook";
 import Home from "./pages/Home/Home";
 import Aboutus from "./pages/Aboutus/Aboutus";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           {/* Define other routes that you need*/}
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 };
