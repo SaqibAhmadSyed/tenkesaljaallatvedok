@@ -1,0 +1,42 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About us",
+        "adopt": "Adopt",
+        "happyStories": "Happy Stories",
+        "inMemoriam": "In Memoriam",
+        "getInvolved": "Get Involved",
+        "volunteer": "Volunteer",
+        "becomeFosterHome": "Become a Foster Home",
+        "contact": "Contact",
+        "donate": "Donate",
+        "logoTitle1": "Tenkesalja Animal Welfare",
+        "logoTitle2": "Protection Association"
+    },
+    "footer":{
+        "contact": "Contact Us",
+        "social": "Follow Us",     
+        "links": "Quick Links",
+        "privacy": "Privacy",
+        "support": "Support Us",
+        "tax": "Tax number: 18646748-1-02",
+        "bank": "Bank account number: 10402434-50526777-87481014",
+        "transfer1": "International transfers: IBAN: HU23 1040 2434 5052 6777 8748 1014",
+        "transfer2": "SWIFT CODE: OKHBHUHB",
+        "rights": "All rights reserved",
+        "created": "Website Created by"
+    },
+    "home": {
+        "title": "Tenkesalja Animal Welfare Protection Association"
+    },
+    "about": {
+        "about-title": "About us",
+        "about-text-1": "There is a small shelter at the bottom of Tenkes, in Siklós, Baranya county, which is fighting for its survival❗️ Some of us, enthusiastic animal lovers, have taken on the serious task voluntarily, at the end of our work, in our free time, often beyond our means, to take care of the shelter. There are only a few of us, which is always a huge problem! We often struggle with the tasks that need to be taken care of as there are so many.",
+        "about-text-2": "We take in the dogs admitted to the Siklós Ebrendészet after 45 days and we look for new owners for them. We will do everything we can and within our means! In 2022 (and in the previous years as well), we managed to find new owners for nearly 100 shelter dogs and many others where organizations or individuals asked for our help.",
+        "about-text-3": "There is a small shelter at the bottom of Tenkes, which we could not maintain without your help❗️ We don't have a license yet to function as an official shelter, but we have already met many conditions, thanks to the 1% you offered! Last year, we built 12 kennels and 2 small convalescent, heated kennels in accordance with the regulations. In addition, we also met the conditions for dry food storage, water block, lighting, sewage drainage and many more.",
+        "about-text-4": "We have to completely demolish the old kennels. They are out of date, they are old, they get wet, they do not meet the regulations! We are lucky that they lasted until now. We were able to move the dogs at the last minute. The last windstorm had rendered them completely unusable.",
+        "about-text-5": "Unfortunately, there are more and more senior dogs coming in, whose final home will be the shelter, so we would like to build a new Senior kennel series for them in place of the old kennels, where they can live out their last years in dignified conditions.",
+        "about-text-6": "In addition, we warmly welcome volunteers to join our small team! 🙏 Thanks for your support and thanks for joining us! ❤️",
+        "about-img-desc": "(Our shelter under construction)"
+    }
+}

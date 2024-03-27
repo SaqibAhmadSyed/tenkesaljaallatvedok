@@ -1,17 +1,46 @@
 import React from "react";
-import "./Aboutus.css";
+import Title from "../../Components/Title/Title";
+import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
+
+  const { t } = useTranslation();
+  const homeImagePath = "../img/dog.jpg";
+  
   return (
-    <div className="container">
-      <h1 className="title">About us</h1>
-      <p className="content">
-        Coming soon. In the meantime, visit us on our Facebook page.
-        <br />
-        <a href="https://www.facebook.com/profile.php?id=100064767426529" target="_blank" className="fb__link">
-          https://www.facebook.com/profile.php?id=100064767426529
-        </a>
-      </p>
+    <div>
+      <Title title={t('about.about-title')} imagePath={homeImagePath} />
+      <div className="about__container container p-5" style={{ padding: "3rem 1rem" }}>
+        <div className="pb-lg-0 px-3 px-lg-5 text-center">
+          <br />
+          <h6 className="content" style={{ fontSize: "16px" }}>
+            {t('about.about-text-1')}
+            <br />
+            <br />
+            {t('about.about-text-2')}
+            <br />
+            <br /> 
+            <div className="text-center">
+              <img src="../img/puppy.jpg" alt="" style={{ maxWidth: "100%" }} />
+            </div>
+            <br />
+            {t('about.about-text-3')}
+            <br />
+            <br />
+            <div className="text-center">
+              <img src="../img/shelter.jpg" alt="" style={{ maxWidth: "100%" }} />
+              <p>{t('about.about-img-desc')}</p>
+            </div>
+            {t('about.about-text-4')}
+            <br />
+            <br />
+            {t('about.about-text-5')}
+            <br />
+            <br />
+            {t('about.about-text-6')}
+          </h6>
+        </div>
+      </div>
     </div>
   );
 };

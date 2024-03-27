@@ -3,31 +3,50 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(233, 255, 238);
+  background-color: rgb(51, 51, 51);
   z-index: var(--z-fixed);
 }
 
-.nav {
+.topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   position: relative;
   height: var(--header-height);
   margin: 1rem;
   white-space: inherit;
+  font-size: 14.5px;
 }
 
 .nav__logo {
-  color: var(--first-color);
-  transition: color 0.4s;
-  font-size: var(--h2-font-size);
-  font-family: var(--second-font);
-  display: inline-block; /* Prevents the logo from making space on its right */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-top: px;
+}
+.nav__logo img{
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  float: left;
 }
 
-.nav__logo img{
-  height: 100px;
-  width: 100px;
+.nav__logo__title{
+  color: rgb(238, 238, 238);
+  padding-top: 15px;
+  display: flex;
+  font-style: none;
 }
 
 .nav__toggle,
@@ -38,7 +57,7 @@
 }
 
 .nav__cta {
-  background-color: #9CFC97;
+  background-color: #79ff72;
   color: var(--title-color);
   border-radius: 4px;
   cursor: pointer;
@@ -48,7 +67,7 @@
 
 .nav__cta:hover {
   color: black !important;
-  background-color: #5ccf56;
+  background-color: #459941;
 }
 
 .nav__list {
@@ -63,13 +82,29 @@
 }
 
 .nav__link {
-  color: var(--title-color);
+  color: rgb(238, 238, 238);
   font-weight: var(--font-semi-bold);
+  position: relative;
   transition: color 0.4s;
 }
 
-.nav__link:hover {
-  color: gray;
+.nav__link:not(.dropdown)::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  transition: width 0.4s;
+}
+
+.nav__link:not(.dropdown):hover::before {
+  width: 100%;
+}
+
+.dropdown .nav__link::before {
+  display: none; /* Hide the underline for dropdown items */
 }
 
 .nav__close {
@@ -85,10 +120,11 @@
 .nav__list__web {
   display: flex;
   flex-direction: row;
-  column-gap: 3rem;
+  column-gap: 2rem;
   list-style-type: none;
   margin-right: 50px;
   box-sizing: border-box;
+  margin-top: 12px;
 }
 
 .dropdown {
@@ -98,7 +134,7 @@
 
 .dropdown-content {
   display: none;
-  background: white;
+  background: rgb(51, 51, 51);
   min-width: 160px;
   position: absolute;
   z-index: 1;

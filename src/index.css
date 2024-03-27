@@ -33,3 +33,14 @@ ul {
 a {
   text-decoration: none;
 }
+
+.main-content {
+  padding-top: 5rem;
+  min-height: 500px;
+}
+
+#root,
+.main-content,
+.footer {
+  width: 100%;
+}

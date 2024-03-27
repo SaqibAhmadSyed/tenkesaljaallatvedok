@@ -11,13 +11,13 @@ const Navbar = () => {
   };
 
   const closeMenuOnMobile = () => {
-    if (window.innerWidth <= 1100) {
+    if (window.innerWidth <= 1080) {
       setShowMenu(false);
     }
   };
   return (
     <header className="header">
-      <nav className="nav container">
+      <div className="topbar">
         <NavLink to="/" className="nav__logo">
           Navigation Bar
         </NavLink>
@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
           <IoMenu />
         </div>
-      </nav>
+      </div>
     </header>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { IoClose, IoMenu, IoChevronDown } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from 'react-i18next';
 import "./NavbarHook.css";
 
 const NavbarHook = () => {
@@ -9,7 +10,10 @@ const NavbarHook = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   // Media query to determine if the device is mobile
-  const isMobile = useMediaQuery({ maxWidth: "1100px" });
+  const isMobile = useMediaQuery({ maxWidth: "1080px" });
+
+  // useTranslation hook
+  const { t, i18n } = useTranslation();
 
   // Function to toggle the mobile menu
   const toggleMenu = () => {
@@ -27,6 +31,12 @@ const NavbarHook = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  // Function to toggle between English and Hungarian
+  const toggleLanguage = () => {
+    const currentLanguage = i18n.language;
+    const newLanguage = currentLanguage === 'en' ? 'hu' : 'en'; // Toggle between 'en' and 'hu'
+    i18n.changeLanguage(newLanguage); // Change language
+  };
 
   // Function to render navigation links
   const renderNavLinks = () => {
@@ -40,7 +50,7 @@ const NavbarHook = () => {
         {/* Navigation links */}
         <li>
           <NavLink to="/" className={linkClassName} onClick={closeMobileMenu}>
-            Home
+            {t('nav.home')}
           </NavLink>
         </li>
         <li>
@@ -49,17 +59,16 @@ const NavbarHook = () => {
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            About us
+            {t('nav.about')}
           </NavLink>
         </li>
-        {/* Add other navigation links */}
         <li>
           <NavLink
             to="/adopt"
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            Adopt
+            {t('nav.adopt')}
           </NavLink>
         </li>
         <li>
@@ -68,7 +77,7 @@ const NavbarHook = () => {
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            Happy Stories
+            {t('nav.happyStories')}
           </NavLink>
         </li>
         <li>
@@ -77,7 +86,7 @@ const NavbarHook = () => {
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            In Memoriam
+            {t('nav.inMemoriam')}
           </NavLink>
         </li>
         <li
@@ -85,26 +94,25 @@ const NavbarHook = () => {
           onClick={isMobile ? toggleDropdown : undefined}
         >
           <div className={linkClassName}>
-            Get Involved<IoChevronDown className="icon" />
+            {t('nav.getInvolved')}<IoChevronDown className="icon" />
           </div>
           <div
-            className={`dropdown-content ${
-              isDropdownOpen && isMobile ? "show-dropdown" : ""
-            }`}
+            className={`dropdown-content ${isDropdownOpen && isMobile ? "show-dropdown" : ""
+              }`}
           >
             <NavLink
               to="/volunteer"
               className={linkClassName}
               onClick={closeMobileMenu}
             >
-              Volunteer
+              {t('nav.volunteer')}
             </NavLink>
             <NavLink
               to="/become-a-foster-home"
               className={linkClassName}
               onClick={closeMobileMenu}
             >
-              Become a Foster Home
+              {t('nav.becomeFosterHome')}
             </NavLink>
           </div>
         </li>
@@ -114,17 +122,24 @@ const NavbarHook = () => {
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            Contact
+            {t('nav.contact')}
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/donate"
+            className={linkClassName}
+            onClick={closeMobileMenu}
+          >
+            {t('nav.donate')}
           </NavLink>
         </li>
         {/* Language button */}
         <li>
           <NavLink
-            to="/hungarian"
             className={buttonClassName}
-            onClick={closeMobileMenu}
-          >
-            Hungarian
+            onClick={toggleLanguage}>
+            {i18n.language === 'en' ? t('hungarian') : t('English')}
           </NavLink>
         </li>
       </ul>
@@ -133,15 +148,16 @@ const NavbarHook = () => {
 
   return (
     <header className="header">
-      <nav className="nav container">
+      <div className="topbar">
         {/* Logo */}
-        <NavLink to="/" className="nav__logo">
-          <img
-            src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
-            alt="Navigation Logo"
-          />
-        </NavLink>
-
+        <div className="logo">
+          <NavLink to="/" className="nav__logo">
+            <img
+              src="../img/logo.jpg"
+              alt="Navigation Logo"
+            />
+            <p className="nav__logo__title">{t('nav.logoTitle1')} <br /> {t('nav.logoTitle2')} </p>
+          </NavLink></div>
         {/* Toggle menu icon for mobile */}
         {isMobile && (
           <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
@@ -165,7 +181,7 @@ const NavbarHook = () => {
           // Render regular navigation links if not mobile
           renderNavLinks()
         )}
-      </nav>
+      </div>
     </header>
   );
 };

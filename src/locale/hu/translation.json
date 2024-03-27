@@ -1,0 +1,42 @@
+{
+    "nav": {
+        "home": "Kezdőoldal",
+        "about": "Rólunk",
+        "adopt": "Gazdit Keres",
+        "happyStories": "Sikertörténetek",
+        "inMemoriam": "Akiknek nem sikerült",
+        "getInvolved": "Hogyan Segíthetsz",
+        "volunteer": "Legyél Önkéntes",
+        "becomeFosterHome": "Legyél Ideiglenes Befogadó",
+        "contact": "Elérhetőségeink",
+        "donate": "Adományozás",
+        "logoTitle1": "Tenkesalja Állatvédő",
+        "logoTitle2": "Egyesület"
+    },
+    "footer":{
+        "contact": "Elérhetőségeink",
+        "social": "Kövess minket",     
+        "links": "Linkek",
+        "privacy": "Adatkezelés",
+        "support": "Támogatás",
+        "tax": "Adószámunk: 18646748-1-02",
+        "bank": "Bankszámlaszámunk: 10402434-50526777-87481014",
+        "transfer1": "Külföldi utalás esetén: IBAN: HU23 1040 2434 5052 6777 8748 1014",
+        "transfer2": "SWIFT KÓD: OKHBHUHB",
+        "rights": "Minden jog fenntartva",
+        "created": "Weboldal Létrehozta"
+    },
+    "home": {
+        "title": "Tenkesalja Állatvédő Egyesület "
+    },
+    "about": {
+        "about-title": "Rólunk",
+        "about-text-1": "Van egy kis menhely a Tenkes alján, Siklóson, Baranya megyében, ami a fennmaradásáért küzd❗️ Néhányan, lelkes állatbarátok magunkra vállaltuk a súlyos feladatot és önkéntesen, a munkánk végén a szabadidőnkben, sokszor erőnkön felül látjuk el a menhelyi teendőket. Kevesen vagyunk, ez mindig óriási gond! Sokszor szélmalomharcot folytatunk a ránk háruló feladatokkal.",
+        "about-text-2": "A siklósi Ebrendészeti telepre bekerült kutyusokat 45 nap után átvesszük, és új gazdit keresünk nekik. Ami tőlünk és a lehetőségeinkből telik, mindent megteszünk! 2022-ben ( és az előző években is) évente közel 100 menhelyi és sok közvetített gazdikereső kutyusnak sikerült új gazdit találnunk.",
+        "about-text-3": "Van egy kis menhely a Tenkes alján, amit a segítségetek nélkül nem tudnánk fenntartani❗️ Egyelőre nincs még engedélyünk, de már sok feltételnek eleget tettünk, köszönhetően az általatok felajánlott 1 %-nak!  A tavalyi évben 12 kennellt és 2 kis lábadozó, fűthető kennelt építettünk az előírásnak megfelelően. Emellett száraztáp tároló, vizesblokk, világítás, szennyvízelvezetés és még sok más feltételnek is eleget tettünk. A régi kenneleket teljesen le kell bontanunk. Elavultak, elöregedtek, beáznak, nem felelnek meg az előírásoknak! Így is összetesszük a két kezünket, hogy eddig bírták! Éppen az utolsó pillanatban tudtuk a kutyusokat átköltöztetni. Az utolsó szélvihar végképp használhatatlanná tette őket.",
+        "about-text-4": "A régi kenneleket teljesen le kell bontanunk. Elavultak, elöregedtek, beáznak, nem felelnek meg az előírásoknak! Így is összetesszük a két kezünket, hogy eddig bírták! Éppen az utolsó pillanatban tudtuk a kutyusokat átköltöztetni. Az utolsó szélvihar végképp használhatatlanná tette őket.",
+        "about-text-5": "Sajnos egyre több a bekerülő idős kutyus, akiknek a végső otthona már a menhely marad, ezért szeretnénk számukra a régi kennelek helyén egy új, Senior kennelsort építeni, ahol méltó körülmények között tölthetik el utolsó éveiket.",
+        "about-text-6": "Emellett nagy szeretettel várjuk önkéntes segítők csatlakozását is maroknyi kis csapatunkhoz! 🙏 Köszönjük, ha segítetek, köszönjük, ha csatlakoztok hozzánk! ❤️",
+        "about-img-desc": "(Menedékünk készülőben)"
+    }
+}
