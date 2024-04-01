@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../Components/Title/Title";
+import Title from "../Components/Title/Title";
 import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
@@ -10,10 +10,10 @@ const Aboutus = () => {
   return (
     <div>
       <Title title={t('about.about-title')} imagePath={homeImagePath} />
-      <div className="about__container container p-5" style={{ padding: "3rem 1rem" }}>
-        <div className="pb-lg-0 px-3 px-lg-5 text-center">
+      <div className="container p-5" style={{ padding: "3rem 1rem" }}>
+        <div className="pb-lg px-3 px-lg-5 text-center">
           <br />
-          <h6 className="content" style={{ fontSize: "16px" }}>
+          <h6 style={{ fontSize: "16px" }}>
             {t('about.about-text-1')}
             <br />
             <br />

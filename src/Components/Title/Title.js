@@ -19,7 +19,7 @@ const Title = ({ title, imagePath }) => {
     }, []); // Empty dependency array ensures effect only runs on mount and unmount
 
     return (
-        <div style={{ position: "relative", backgroundColor: "black" }} className="title__container">
+        <div style={{ position: "relative", backgroundColor: "black" }}>
             <h1 style={{ position: "absolute", top: "50%", left: "50%", fontSize: isSmallScreen ? '25px' : '50px' ,
             transform: "translate(-50%, -50%)", color: "white", zIndex: "1", fontWeight: "600", textAlign: "center" }} className='title__text'>
                {title}

@@ -38,5 +38,40 @@
         "about-text-5": "Sajnos egyre több a bekerülő idős kutyus, akiknek a végső otthona már a menhely marad, ezért szeretnénk számukra a régi kennelek helyén egy új, Senior kennelsort építeni, ahol méltó körülmények között tölthetik el utolsó éveiket.",
         "about-text-6": "Emellett nagy szeretettel várjuk önkéntes segítők csatlakozását is maroknyi kis csapatunkhoz! 🙏 Köszönjük, ha segítetek, köszönjük, ha csatlakoztok hozzánk! ❤️",
         "about-img-desc": "(Menedékünk készülőben)"
+    },
+    "foster":{
+        "title": "Legyen Ideiglenes Befogadó",
+        "subtitle-1": "Együtt a változásért",
+        "content-1":  "Egy elhanyagolt vagy elhagyott kutya vagy macska gondozása az állatmentés egyik legfontosabb és rendkívül örömteli része. Bár állatokat tartunk a menhelyünkön is, az, hogy egyes állatokat családoknál elhelyezhetünk, lehetőséget ad számukra, hogy otthoni környezetben lehessenek, több figyelmet és szeretetet kapjanak, új dolgokkal ismerkedjenek meg, és megismerjék az emberrel való együttélés minden aspektusát, más állatokat, ha van más házi kedvence is. Amíg ez az állat az Ön otthonában marad, mi addig örök otthont fogunk keresni neki.",
+        "subtitle-2": "A nevelőszülői gondozás időtartama",
+        "content-2": "Az állatok ideiglenes gondozásában eltöltött idő a következőktől függhet: ",
+        "list-1": "személyiségük (ha több képzésre vagy szocializációra van szükségük)",
+        "list-2": "betegek-e, és",
+        "list-3": "mennyi idő kell ahhoz, hogy örök otthont találjunk számára.",
+        "content-3": "Menhelyünk biztosítja az élelmet és a szükséges állatorvosi ellátást az ideiglenes befogadónál.",
+        "subtitle-3": "Alapvető követelmény",
+        "content-4": "Néhány alapvető dolog, amelyet ideiglenes befogadóinktól kérünk:",
+        "list-4": "A saját háziállatának oltással kell rendelkeznie",
+        "list-5": "Saját házi kedvenceit ivartalanítani/ivartalanítani kell",
+        "list-6": "- Nagyon fontos, hogy időt szánjon a nevelni kívánt állat gondozására",
+        "list-7": "A ideiglenes befogadói megállapodást be kell tartani.",
+        "content-5": "Írjon nekünk, ha ez érdekelné! Vegye fel velünk a kapcsolatot még ma, hogy együtt még több életet menthessünk meg!"
+    },
+    "donate": {
+        "title": "Adományozz",
+        "subtitle-1": "Köszönjük a támogatásodat",
+        "subtitle-2": "Többféleképpen támogathatod munkánkat, többek között:",
+        "list-title-1": "Banki átutalással",
+        "list-title-2": "Tárgyi adományokkal",
+        "content-1": "Belföldről:",
+        "content-2": "Adószámunk: 18646748-1-02",
+        "content-3": "Bankszámlaszámunk: 10402434-50526777-87481014",
+        "content-4": "Külföldi utalás esetén:",
+        "content-5": "IBAN: HU23 1040 2434 5052 6777 8748 1014",
+        "content-6": "SWIFT KÓD: OKHBHUHB",
+        "content-7": "Tárgyi adományokkal, bármilyen adományt szívesen fogadunk.",
+        "content-8": "Kattintson ide",
+        "content-9": "a részletes listát láthassa, hogy mire van a legnagyobb szükségünk a menhelyünkön.",
+        "link": "Tárgyak adományozása hozzánk"
     }
 }
