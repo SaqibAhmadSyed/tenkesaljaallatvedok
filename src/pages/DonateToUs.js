@@ -5,7 +5,6 @@ import { Card, ListGroup } from 'react-bootstrap';
 
 const DonateToUs = () => {
     const { t } = useTranslation();
-    const homeImagePath = "../img/donate-to-us.jpg";
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -23,7 +22,6 @@ const DonateToUs = () => {
 
     return (
         <div>
-            <Title title={t('donate-to-us.title')} imagePath={homeImagePath} />
             <div className="container mt-5">
                 <h1 className='text-center m-4' style={{ color: '#58c459', fontWeight: '600' }}>{t('donate-to-us.subtitle')}</h1>
                 <p>{t('donate-to-us.details')}</p>

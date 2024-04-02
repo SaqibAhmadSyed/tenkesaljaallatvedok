@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Title from '../Components/Title/Title';
 import { NavLink } from "react-router-dom";
 
 const FosterHome = () => {
     const { t } = useTranslation();
-    const homeImagePath = "../img/foster.jpg";
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -20,7 +18,6 @@ const FosterHome = () => {
 
     return (
         <div>
-            <Title title={t('foster.title')} imagePath={homeImagePath} />
             <div className="row justify-content-center m-5">
                 <div className={`col-md-${windowWidth <= 1080 ? '12' : '4'}${windowWidth <= 1080 ? ' border-bottom' : ''}`}>
                     <h1 className='text-center mb-4' style={{ color: '#58c459', fontWeight: '600' }}>

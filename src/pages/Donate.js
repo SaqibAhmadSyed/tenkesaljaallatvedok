@@ -1,15 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Title from '../Components/Title/Title';
 import { NavLink } from "react-router-dom";
 import { Card, ListGroup } from 'react-bootstrap';
 
 const Donate = () => {
     const { t } = useTranslation();
-    const homeImagePath = "../img/donate.png";
     return (
         <div>
-            <Title title={t('donate.title')} imagePath={homeImagePath} />
             <div className="container p-5">
                 <h1 className='text-center mb-3' style={{ color: '#58c459', fontWeight: '600' }}>{t("donate.subtitle-1")}</h1>
                 <h4 className='text-center mb-5'>{t("donate.subtitle-2")}</h4>

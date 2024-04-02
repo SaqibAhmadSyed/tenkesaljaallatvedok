@@ -20,12 +20,14 @@
 }
 
 .nav__logo {
+  font-family: "Dancing Script", cursive;;
   display: flex;
   text-align: center;
   justify-content: center;
   align-self: center;
   align-items: center;
-  margin-top: px;
+  vertical-align: middle;
+  font-size: 20px;
 }
 .nav__logo img{
   width: 75px;
@@ -61,6 +63,7 @@
   color: var(--title-color);
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 600;
   transition: background-color 0.3s ease;
   padding: 0.75rem 1.5rem;
 }
