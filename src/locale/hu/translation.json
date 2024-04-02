@@ -13,9 +13,9 @@
         "logoTitle1": "Tenkesalja Állatvédő",
         "logoTitle2": "Egyesület"
     },
-    "footer":{
+    "footer": {
         "contact": "Elérhetőségeink",
-        "social": "Kövess minket",     
+        "social": "Kövess minket",
         "links": "Linkek",
         "privacy": "Adatkezelés",
         "support": "Támogatás",
@@ -39,10 +39,10 @@
         "about-text-6": "Emellett nagy szeretettel várjuk önkéntes segítők csatlakozását is maroknyi kis csapatunkhoz! 🙏 Köszönjük, ha segítetek, köszönjük, ha csatlakoztok hozzánk! ❤️",
         "about-img-desc": "(Menedékünk készülőben)"
     },
-    "foster":{
+    "foster": {
         "title": "Legyen Ideiglenes Befogadó",
         "subtitle-1": "Együtt a változásért",
-        "content-1":  "Egy elhanyagolt vagy elhagyott kutya vagy macska gondozása az állatmentés egyik legfontosabb és rendkívül örömteli része. Bár állatokat tartunk a menhelyünkön is, az, hogy egyes állatokat családoknál elhelyezhetünk, lehetőséget ad számukra, hogy otthoni környezetben lehessenek, több figyelmet és szeretetet kapjanak, új dolgokkal ismerkedjenek meg, és megismerjék az emberrel való együttélés minden aspektusát, más állatokat, ha van más házi kedvence is. Amíg ez az állat az Ön otthonában marad, mi addig örök otthont fogunk keresni neki.",
+        "content-1": "Egy elhanyagolt vagy elhagyott kutya vagy macska gondozása az állatmentés egyik legfontosabb és rendkívül örömteli része. Bár állatokat tartunk a menhelyünkön is, az, hogy egyes állatokat családoknál elhelyezhetünk, lehetőséget ad számukra, hogy otthoni környezetben lehessenek, több figyelmet és szeretetet kapjanak, új dolgokkal ismerkedjenek meg, és megismerjék az emberrel való együttélés minden aspektusát, más állatokat, ha van más házi kedvence is. Amíg ez az állat az Ön otthonában marad, mi addig örök otthont fogunk keresni neki.",
         "subtitle-2": "A nevelőszülői gondozás időtartama",
         "content-2": "Az állatok ideiglenes gondozásában eltöltött idő a következőktől függhet: ",
         "list-1": "személyiségük (ha több képzésre vagy szocializációra van szükségük)",
@@ -73,5 +73,52 @@
         "content-8": "Kattintson ide",
         "content-9": "a részletes listát láthassa, hogy mire van a legnagyobb szükségünk a menhelyünkön.",
         "link": "Tárgyak adományozása hozzánk"
+    },
+    "donate-to-us": {
+        "title": "Tárgyi támogatás",
+        "subtitle": "Szervezetünk a közönség adományaitól függ",
+        "details": "Legyen valami új, amit esetleg szeretne nekünk ajándékozni, vagy valami használt, mi mindenféleképpen örülnénk, ha támogatná ügyünket. Mi nagyon keményen dolgozunk sok állat életének megmentésén. Ez azt jelenti, hogy létesítményünkben sok olyan dolgot használunk napi szinten, amelyek hamar elfogynak. További részletekért tekintse meg az alábbi listát.",
+        "food": {
+            "title": "Kutyaeledel",
+            "list-1": "Száraz tápok és konzervek kölyökkutyáknak, fiatal kutyáknak, felnőtt kutyáknak és idős kutyáknak",
+            "list-2": "Diétás eledel beteg és elhízott kutyák számára",
+            "list-3": "Készételek",
+            "list-4": "Nyers hús"
+        },
+        "accessories": {
+            "title": "Kutya felszerelés",
+            "list-1": "Kutya játékok",
+            "list-2": "Kutyafekhely",
+            "list-3": "Kutyaház",
+            "list-4": "Állathordozók",
+            "list-5": "Ketrecek",
+            "list-6": "Etető és itatótálak",
+            "list-7": "Fésűk, kefék, körömvágók, szőrnyírók",
+            "list-8": "Nyakörvek és pórázok minden méretben",
+            "list-9": "Kutya sampon",
+            "list-10": "Törölközők"
+        },
+        "medicines": {
+            "title": "Gyógyszerek, Egészségügyi Eszközök",
+            "list-1": "Gyógyszerek",
+            "list-2": "Vitaminok",
+            "list-3": "Csonterősítők",
+            "list-4": "Kullancs és bolhairtó",
+            "list-5": "Féreghajtó tabletta",
+            "list-6": "Orvosi fertőtlenítőszer",
+            "list-7": "Steril kötszer",
+            "list-8": "Kutya sampon",
+            "list-9": "Gyógyító és védő gallérok/kúpok műtött állataink és balesetben sérült állataink számára"
+        },
+        "cleaning": {
+            "title": "Takarítószer és Takarítóeszköz",
+            "list-1": "Gumikesztyű",
+            "list-2": "Papír kéztörlő",
+            "list-3": "Műanyag gallér a műtött és balesetes állatainknak",
+            "list-4": "Maszk",
+            "list-5": "Szivacs",
+            "list-6": "Mosogatószer",
+            "list-7": "Vödrök"
+        }
     }
 }

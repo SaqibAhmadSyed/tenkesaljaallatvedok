@@ -13,9 +13,9 @@
         "logoTitle1": "Tenkesalja Animal Welfare",
         "logoTitle2": "Protection Association"
     },
-    "footer":{
+    "footer": {
         "contact": "Contact Us",
-        "social": "Follow Us",     
+        "social": "Follow Us",
         "links": "Quick Links",
         "privacy": "Privacy",
         "support": "Support Us",
@@ -58,13 +58,13 @@
         "list-7": "Spending time to care for the animal you would like to foster is very important",
         "list-8": "The foster agreement must be abided by."
     },
-    "donate":{
+    "donate": {
         "title": "Donate",
         "subtitle-1": "Thank You for Your Support",
         "subtitle-2": "There are several ways you can support us, which includes",
         "list-title-1": "Bank Transfer",
         "list-title-2": "Item Donation",
-        "content-1": "From within the country",
+        "content-1": "From within the country:",
         "content-2": "tax number: 18646748-1-02",
         "content-3": "bank account: 10402434-50526777-87481014",
         "content-4": "For international reference:",
@@ -74,5 +74,50 @@
         "content-8": "Click here",
         "content-9": "for more details about what we need the most at our shelter.",
         "link": "Donating Items to Us"
+    },
+    "donate-to-us": {
+        "title": "Donating Items To Us",
+        "subtitle": "Our organization depends on the donation of the public",
+        "details": "Let it be something new that you might wish to give us or something used, we would be glad if you would like to support our cause. We work very hard to save the lives of many animals. This means we use a lot of things in our facility on a daily basis that need to be refilled. See a list of items below for more details.",
+        "food": {
+            "title": "Dog food",
+            "list-1": "Dry food and canned food for puppies, young dogs, adult dogs and elderly dogs",
+            "list-2": "Dietary food for sick and obese dogs",
+            "list-3": "Ready meals",
+            "list-4": "Raw meat"
+        },
+        "accessories": {
+            "title": "Accessories for dogs",
+            "list-1": "Dog toys",
+            "list-2": "Dog beds",
+            "list-3": "Dog houses",
+            "list-4": "Dog carriers",
+            "list-5": "Dog crates",
+            "list-6": "Feeders and drinking bowls",
+            "list-7": "Brushes, combs, hair trimmers, nail cutters",
+            "list-8": "Collars and leashes in all sizes",
+            "list-9": "Dog shampoo",
+            "list-10": "Towels"
+        },
+        "medicines": {
+            "title": "Medicines, Medical Devices",
+            "list-1": "Vitamins",
+            "list-2": "Bone reinforcements",
+            "list-3": "Tick and flea repellent",
+            "list-4": "Anthelmintic tablets",
+            "list-5": "Medical disinfectant",
+            "list-6": "Sterile bandage",
+            "list-7": "Dog shampoo",
+            "list-8": "Protective & recovery collars/cones for our operated animals and animals injured in an accident"
+        },
+        "cleaning": {
+            "title": "Cleaning products and tools",
+            "list-1": "Rubber gloves",
+            "list-2": "Paper towel",
+            "list-3": "Masks",
+            "list-4": "Sponges",
+            "list-5": "Dishwashing liquid",
+            "list-6": "Buckets"
+        }
     }
 }

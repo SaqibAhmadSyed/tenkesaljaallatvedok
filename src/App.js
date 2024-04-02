@@ -9,6 +9,7 @@ import InMemoriam from "./pages/Memoriam";
 import Footer from "./Components/Footer/Footer";
 import FosterHome from "./pages/FosterHome";
 import Donate from "./pages/Donate";
+import DonateToUs from "./pages/DonateToUs";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/in-memoriam" element={<InMemoriam />} />
             <Route path="/become-a-foster-home" element={<FosterHome />} />
             <Route path="/donate" element={<Donate />} />
+            <Route path="/donating-items-to-us" element={<DonateToUs />} />
             {/* Define other routes that you need*/}
 
           </Routes>

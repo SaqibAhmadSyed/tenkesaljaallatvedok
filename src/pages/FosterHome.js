@@ -23,7 +23,7 @@ const FosterHome = () => {
             <Title title={t('foster.title')} imagePath={homeImagePath} />
             <div className="row justify-content-center m-5">
                 <div className={`col-md-${windowWidth <= 1080 ? '12' : '4'}${windowWidth <= 1080 ? ' border-bottom' : ''}`}>
-                    <h1 className='text-center mb-4'>
+                    <h1 className='text-center mb-4' style={{ color: '#58c459', fontWeight: '600' }}>
                         {t('foster.subtitle-1')}
                     </h1>
 
@@ -41,7 +41,7 @@ const FosterHome = () => {
                         marginLeft: windowWidth > 1080 ? '20px' : '0px',
                         marginTop: windowWidth <= 1080 ? '40px' : '0px'
                     }}>
-                    <h1 className='text-center' style={{ textDecoration: 'underline' }}>{t('foster.subtitle-1')}</h1>
+                    <h1 className='text-center' style={{ color: '#58c459', fontWeight: '600' }}>{t('foster.subtitle-2')}</h1>
                     <p>
                         {t('foster.content-2')}
                     </p>
@@ -53,7 +53,7 @@ const FosterHome = () => {
                     <p>
                     {t('foster.content-3')}
                     </p>
-                    <h1 className="mt-5 text-center" style={{ textDecoration: 'underline' }}>{t('foster.subtitle-3')}</h1>
+                    <h1 className="mt-5 text-center" style={{ color: '#58c459', fontWeight: '600' }}>{t('foster.subtitle-3')}</h1>
                     <p>
                     {t('foster.content-4')}
                     </p>

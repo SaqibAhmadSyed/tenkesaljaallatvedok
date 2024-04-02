@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from '../Components/Title/Title';
 import { NavLink } from "react-router-dom";
+import { Card, ListGroup } from 'react-bootstrap';
 
 const Donate = () => {
     const { t } = useTranslation();
@@ -14,34 +15,29 @@ const Donate = () => {
                 <h4 className='text-center mb-5'>{t("donate.subtitle-2")}</h4>
                 <div className='d-flex justify-content-center flex-wrap'>
                     <div className="col-lg-4 mb-4">
-                        <div className="card border-0 mb-4">
-                            <img className="card-img-top" src="../img/donate-1.jpg" alt="" />
-                            <div className="card-body bg-light p-4 shadow">
-                                <h3 className="card-title text-center" style={{ color: '#58c459', fontWeight: '600' }}>{t("donate.list-title-1")}</h3>
-                                <ul>
-                                    <p>{t("donate.content-1")}</p>
-                                    <ul>
-                                        <li>{t("donate.content-2")}</li>
-                                        <li>{t("donate.content-3")}</li>
-                                    </ul>
-                                    <br />
-                                    <p>{t("donate.content-4")}</p>
-                                    <ul>
-                                        <li>{t("donate.content-5")}</li>
-                                        <li>{t("donate.content-6")}</li>
-                                    </ul>
-                                </ul>
-                            </div>
-                        </div>
+                        <Card className="shadow">
+                            <Card.Img variant="top" src="../img/donate-1.jpg" />
+                            <Card.Body>
+                                <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t("donate.list-title-1")}</Card.Title>
+                                <ListGroup variant="flush">
+                                    <Card.Subtitle className="mt-2 text-muted">{t("donate.content-1")}</Card.Subtitle>
+                                    <ListGroup.Item>{t("donate.content-2")}</ListGroup.Item>
+                                    <ListGroup.Item>{t("donate.content-3")}</ListGroup.Item>
+                                    <Card.Subtitle className="mt-3 text-muted">{t("donate.content-4")}</Card.Subtitle>
+                                    <ListGroup.Item>{t("donate.content-5")}</ListGroup.Item>
+                                    <ListGroup.Item>{t("donate.content-6")}</ListGroup.Item>
+                                </ListGroup>
+                            </Card.Body>
+                        </Card>
                     </div>
-                    <div className="col-lg-1">
-                    </div>
+                    <div className="col-lg-1"></div>
                     <div className="col-lg-4 mb-4">
-                        <div className="card border-0 mb-4">
-                            <img className="card-img-top" src="../img/donate-2.jpg" alt="" />
-                            <div className="card-body bg-light p-4 shadow">
-                                <h3 className="card-title text-center" style={{ color: '#58c459', fontWeight: '600' }}>{t("donate.list-title-2")}</h3>
-                                <p> {t("donate.content-7")}
+                        <Card className="shadow">
+                            <Card.Img variant="top" src="../img/donate-2.jpg" />
+                            <Card.Body>
+                                <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t("donate.list-title-2")}</Card.Title>
+                                <Card.Text>
+                                    {t("donate.content-7")}
                                     <br />
                                     <NavLink
                                         to="/donating-items-to-us"
@@ -53,10 +49,9 @@ const Donate = () => {
                                         {t("donate.content-8")}&nbsp;
                                     </NavLink>
                                     {t("donate.content-9")}
-                                </p>
-                                <br />
-                            </div>
-                        </div>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </div>
                 </div>
             </div>
