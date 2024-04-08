@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu, IoChevronDown } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
 import { useTranslation } from 'react-i18next';
@@ -161,7 +161,7 @@ const NavbarHook = () => {
         {/* Toggle menu icon for mobile */}
         {isMobile && (
           <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-            <IoMenu />
+            <IoMenu style={{color: 'white'}}/>
           </div>
         )}
 
@@ -174,7 +174,7 @@ const NavbarHook = () => {
             {renderNavLinks()}
             {/* Close menu icon for mobile */}
             <div className="nav__close" id="nav-close" onClick={toggleMenu}>
-              <IoClose />
+              <IoClose style={{color: 'white'}}/>
             </div>
           </div>
         ) : (

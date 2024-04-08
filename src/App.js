@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import NavbarHook from "./Components/NavbarHook/NavbarHook";
 import Home from "./pages/Home/Home";
@@ -11,6 +12,7 @@ import Donate from "./pages/Donate";
 import DonateToUs from "./pages/DonateToUs";
 import Title from "./Components/Title/Title";
 import { useTranslation } from 'react-i18next';
+import Volunteer from "./pages/Volunteer";
 
 const getCurrentImagePath = (pathname) => {
   switch (pathname) {
@@ -18,6 +20,8 @@ const getCurrentImagePath = (pathname) => {
       return { imagePath: "../img/about-us.jpg", titleKey: "about.title" };
     case "/become-a-foster-home":
       return { imagePath: "../img/foster.jpg", titleKey: "foster.title" };
+    case "/volunteer":
+      return { imagePath: "../img/volunteer.jpg", titleKey: "volunteer.title" };
     case "/donating-items-to-us":
       return { imagePath: "../img/donate-to-us.jpg", titleKey: "donate-to-us.title" };
     case "/donate":
@@ -48,6 +52,7 @@ const App = () => {
           <Route path="/about-us" element={<Aboutus />} />
           <Route path="/in-memoriam" element={<InMemoriam />} />
           <Route path="/become-a-foster-home" element={<FosterHome />} />
+          <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/donating-items-to-us" element={<DonateToUs />} />
           {/* Define other routes that you need*/}

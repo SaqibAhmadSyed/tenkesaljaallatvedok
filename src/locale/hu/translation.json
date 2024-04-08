@@ -39,6 +39,56 @@
         "text-6": "Emellett nagy szeretettel várjuk önkéntes segítők csatlakozását is maroknyi kis csapatunkhoz! 🙏 Köszönjük, ha segítetek, köszönjük, ha csatlakoztok hozzánk! ❤️",
         "img-desc": "(Menedékünk készülőben)"
     },
+    "volunteer": {
+        "title": "Legyen Önkéntes",
+        "subtitle-1": "Módok, Hogyan Segíthetsz",
+        "subtitle-2": "Módok, Hogyan Lehet Önkéntes",
+        "subtitle-3": "Önkéntes Űrlap",
+        "content-1": "Szervezetünket adományokból és önkéntes munkából finanszírozzuk. Bízunk az Ön nagylelkűségében és támogatásában, hogy segíteni tudjunk a gondozásunkban lévő állatokon.",
+        "content-2": "Nagyon sok az állatok részére beérkező segélykérés, így az Ön részéről érkező bármilyen segítség rendkívül fontos számunkra.",
+        "content-4": "A rendelkezésre álló korlátozott anyagi bevételek miatt az önkéntesség nem fizetett.",
+        "content-5": "Sokféle módon segíthet nekünk, többek között:",
+        "options": {
+          "1": "A kutyák sétáltatása",
+          "2": "Egy kis időt eltölteni az állatokkal",
+          "3": "Kennelek tisztítása",
+          "4": "Állatok tisztítása",
+          "5": "Állatok szállítása",
+          "6": "Állataink fényképezése",
+          "7": "Ideiglenes Befogadó",
+          "8": "Állatkozmetika (kutya, macska)",
+          "9": "Állatok rehabilitációja és tréningje",
+          "10": "Állatorvosi ellátás",
+          "11": "Adminisztratív munka",
+          "12": "Adománygyűjtés"
+        },
+        "form": {
+            "first": "Keresztnév",
+            "last": "Vezetéknév/családnév",
+            "email": "Email",
+            "phone": "Telephone",
+            "type": "Miben tudnál segíteni",
+            "message": "Üzenet",
+            "age": "18 év felett vagy?",
+            "submit": "Küld",
+            "options": {
+                "select": "Miben tudnál segíteni?",
+                "1": "A kutyák szállítása",
+                "2": "Szükséges tárgyak szállítása",
+                "3": "A kutyák sétáltatása",
+                "4": "Állatok tisztítása",
+                "5": "Állatkozmetika",
+                "6": "Állatok hordozóinak tisztítása",
+                "7": "Állatok tisztítása",
+                "8": "Állatok képzése és rehabilitációja",
+                "9": "Adománygyűjtés",
+                "10": "Ideiglenes befogadóként, kattints ide további információért",
+                "11": "Beteg állatok gondozása",
+                "12": "Állatorvosi ellátás (állatorvosoktól és állatgondozóktól)",
+                "13": "Szakmai támogatás (kőműves, asztalos, hegesztő stb.)"
+            }
+          }
+    },
     "foster": {
         "title": "Legyen Ideiglenes Befogadó",
         "subtitle-1": "Együtt a változásért",

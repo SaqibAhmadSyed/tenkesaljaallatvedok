@@ -21,7 +21,7 @@ const Footer = () => {
                         <p>Tel: +36 70 587 6260</p>
                         <p>
                             <a href="mailto:tenkesaljaallatvedoegyesulet@gmail.com">
-                            tenkesaljaallatvedoegyesulet@gmail.com
+                            tenkesaljaallatvedoe<br />gyesulet@gmail.com
                             </a>
                         </p>
                     </div>

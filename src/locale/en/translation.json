@@ -39,6 +39,56 @@
         "text-6": "In addition, we warmly welcome volunteers to join our small team! 🙏 Thanks for your support and thanks for joining us! ❤️",
         "img-desc": "(Our shelter under construction)"
     },
+    "volunteer": {
+        "title": "Volunteer",
+        "subtitle-1": "Ways You Can Help",
+        "subtitle-2": "Ways You Can Volunteer",
+        "subtitle-3": "Volunteer Form",
+        "content-1": "Our organization is funded by donations and volunteer work. We rely on your generosity and support to be able to help all the animals in our care.",
+        "content-2": "The incoming requests can be overwhelming sometimes as well, so any help from your end will make a difference.",
+        "content-4": "Note that due to the limited funds available, volunteering is non-paid.",
+        "content-5": "You can help us in many different ways, including:",
+        "options": {
+          "1": "Walking of the dogs",
+          "2": "Spending some time with the animals",
+          "3": "Cleaning of kennels",
+          "4": "Cleaning of animals",
+          "5": "Transporting of animals",
+          "6": "Taking photos of our animals",
+          "7": "Becoming a foster home",
+          "8": "Animal grooming for dogs and cats",
+          "9": "Animal rehabilitation & training",
+          "10": "Veterinary care",
+          "11": "Administrative work",
+          "12": "Fundraising"
+        },
+        "form": {
+            "first": "First Name",
+            "last": "Last Name",
+            "email": "Email Address",
+            "phone": "Telephone",
+            "type": "Type of volunteering I am interested in",
+            "message": "Message",
+            "age": "Are you over 18?",
+            "submit": "submit",
+            "options": {
+                "select": "What would you like to help us with?",
+                "1": "Transporting of animals",
+                "2": "Transporting of items we need",
+                "3": "Walking of our dogs",
+                "4": "Cleaning of animals",
+                "5": "Animal grooming",
+                "6": "Cleaning of the pet carriers",
+                "7": "Cleaning of animals",
+                "8": "Training of animals and animal rehabilitation",
+                "9": "Fundraising",
+                "10": "Be a foster home, click here for more information",
+                "11": "Taking care of sick animals",
+                "12": "Veterinary care (from veterinarians and animal technicians)",
+                "13": "Professional support (mason, carpenter, welder etc.)"
+            }
+          }
+    },
     "foster": {
         "title": "Become a Foster Home",
         "subtitle-1": "Making a difference together",
