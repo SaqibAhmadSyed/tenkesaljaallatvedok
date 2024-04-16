@@ -10,9 +10,10 @@ import Footer from "./Components/Footer/Footer";
 import FosterHome from "./pages/FosterHome";
 import Donate from "./pages/Donate";
 import DonateToUs from "./pages/DonateToUs";
-import Title from "./Components/Title/Title";
+import Title from "./Components/Title";
 import { useTranslation } from 'react-i18next';
 import Volunteer from "./pages/Volunteer";
+import Contact from "./pages/Contact";
 
 const getCurrentImagePath = (pathname) => {
   switch (pathname) {
@@ -24,6 +25,8 @@ const getCurrentImagePath = (pathname) => {
       return { imagePath: "../img/volunteer.jpg", titleKey: "volunteer.title" };
     case "/donating-items-to-us":
       return { imagePath: "../img/donate-to-us.jpg", titleKey: "donate-to-us.title" };
+    case "/contact":
+      return { imagePath: "../img/contact.png", titleKey: "contact.title" };
     case "/donate":
       return { imagePath: "../img/donate.png", titleKey: "donate.title" };
     default:
@@ -53,6 +56,7 @@ const App = () => {
           <Route path="/in-memoriam" element={<InMemoriam />} />
           <Route path="/become-a-foster-home" element={<FosterHome />} />
           <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/donating-items-to-us" element={<DonateToUs />} />
           {/* Define other routes that you need*/}

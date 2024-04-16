@@ -21,25 +21,25 @@ const Footer = () => {
                         <p>Tel: +36 70 587 6260</p>
                         <p>
                             <a href="mailto:tenkesaljaallatvedoegyesulet@gmail.com">
-                            tenkesaljaallatvedoe<br />gyesulet@gmail.com
+                                tenkesaljaallatvedoe<br />gyesulet@gmail.com
                             </a>
                         </p>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>{t('footer.links')}</h4>
-                        <NavLink to="/" activeClassName="active">
+                        <NavLink to="/">
                             <p>{'>'} {t('nav.home')}</p>
                         </NavLink>
-                        <NavLink to="/about-us" activeClassName="active">
+                        <NavLink to="/about-us">
                             <p>{'>'} {t('nav.about')}</p>
                         </NavLink>
-                        <NavLink to="/adopt" activeClassName="active">
+                        <NavLink to="/adopt">
                             <p>{'>'} {t('nav.adopt')}</p>
                         </NavLink>
-                        <NavLink to="/volunteer" activeClassName="active">
+                        <NavLink to="/volunteer">
                             <p>{'>'} {t('nav.volunteer')}</p>
                         </NavLink>
-                        <NavLink to="/privacy" activeClassName="active">
+                        <NavLink to="/privacy">
                             <p>{'>'} {t('footer.privacy')}</p>
                         </NavLink>
                     </div>
@@ -48,22 +48,18 @@ const Footer = () => {
                         <p>{t('footer.tax')}</p>
                         <p>{t('footer.bank')}</p>
                         <p>{t('footer.transfer1')}
-                        <br />
-                        <br />
-                        {t('footer.transfer2')}</p>
+                            <br />
+                            <br />
+                            {t('footer.transfer2')}</p>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>{t('footer.social')}</h4>
                         <div className="socialmedia">
                             <p>
-                                <a href="https://www.facebook.com/profile.php?id=100064767426529" target="blank">
-                                    {fb}
-                                </a>
+                                {fb}
                             </p>
                             <p>
-                                <a href="" target="blank">
-                                    {ig}
-                                </a>
+                                {ig}
                             </p>
                         </div>
                     </div>

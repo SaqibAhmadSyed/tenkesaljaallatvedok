@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Title from '../Components/Title/Title';
 import { useTranslation } from 'react-i18next';
 import { Card, ListGroup } from 'react-bootstrap';
 

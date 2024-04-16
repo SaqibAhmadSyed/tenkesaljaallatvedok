@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "../Components/Title/Title";
 import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {

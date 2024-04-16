@@ -61,33 +61,7 @@
           "10": "Veterinary care",
           "11": "Administrative work",
           "12": "Fundraising"
-        },
-        "form": {
-            "first": "First Name",
-            "last": "Last Name",
-            "email": "Email Address",
-            "phone": "Telephone",
-            "type": "Type of volunteering I am interested in",
-            "message": "Message",
-            "age": "Are you over 18?",
-            "submit": "submit",
-            "options": {
-                "select": "What would you like to help us with?",
-                "1": "Transporting of animals",
-                "2": "Transporting of items we need",
-                "3": "Walking of our dogs",
-                "4": "Cleaning of animals",
-                "5": "Animal grooming",
-                "6": "Cleaning of the pet carriers",
-                "7": "Cleaning of animals",
-                "8": "Training of animals and animal rehabilitation",
-                "9": "Fundraising",
-                "10": "Be a foster home, click here for more information",
-                "11": "Taking care of sick animals",
-                "12": "Veterinary care (from veterinarians and animal technicians)",
-                "13": "Professional support (mason, carpenter, welder etc.)"
-            }
-          }
+        }
     },
     "foster": {
         "title": "Become a Foster Home",
@@ -107,6 +81,36 @@
         "list-6": "Having a separate room or area to confine the foster pet, if necessary",
         "list-7": "Spending time to care for the animal you would like to foster is very important",
         "list-8": "The foster agreement must be abided by."
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle-1": "Contact Form",
+        "content-1": "Our organization is funded by donations and volunteer work. We rely on your generosity and support to be able to help all the animals in our care.",
+        "content-2": "The incoming requests can be overwhelming sometimes as well, so any help from your end will make a difference.",
+        "content-4": "Note that due to the limited funds available, volunteering is non-paid.",
+        "content-5": "You can help us in many different ways, including:",
+        "options": {
+          "1": "Walking of the dogs",
+          "2": "Spending some time with the animals",
+          "3": "Cleaning of kennels",
+          "4": "Cleaning of animals",
+          "5": "Transporting of animals",
+          "6": "Taking photos of our animals",
+          "7": "Becoming a foster home",
+          "8": "Animal grooming for dogs and cats",
+          "9": "Animal rehabilitation & training",
+          "10": "Veterinary care",
+          "11": "Administrative work",
+          "12": "Fundraising"
+        },
+        "form": {
+            "first": "First Name",
+            "last": "Last Name",
+            "email": "Email Address",
+            "phone": "Telephone",
+            "message": "Message",
+            "submit": "submit"
+          }
     },
     "donate": {
         "title": "Donate",
@@ -168,6 +172,36 @@
             "list-4": "Sponges",
             "list-5": "Dishwashing liquid",
             "list-6": "Buckets"
+        }
+    },
+    "form": {
+        "first": "First Name",
+        "first-error": "Enter a valid first name",
+        "last": "Last Name",
+        "last-error": "Enter a valid last name",
+        "email": "Email Address",
+        "email-error": "Enter a valid email",
+        "phone": "Telephone",
+        "phone-error": "Enter a valid phone number",
+        "type": "Type of volunteering I am interested in",
+        "message": "Message",
+        "age": "Are you over 18?",
+        "submit": "submit",
+        "options": {
+            "select": "What would you like to help us with?",
+            "1": "Transporting of animals",
+            "2": "Transporting of items we need",
+            "3": "Walking of our dogs",
+            "4": "Cleaning of animals",
+            "5": "Animal grooming",
+            "6": "Cleaning of the pet carriers",
+            "7": "Cleaning of animals",
+            "8": "Training of animals and animal rehabilitation",
+            "9": "Fundraising",
+            "10": "Be a foster home, click here for more information",
+            "11": "Taking care of sick animals",
+            "12": "Veterinary care (from veterinarians and animal technicians)",
+            "13": "Professional support (mason, carpenter, welder etc.)"
         }
     }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Title from '../Components/Title/Title';
 
 const Memoriam = () => {
     const { t } = useTranslation();
