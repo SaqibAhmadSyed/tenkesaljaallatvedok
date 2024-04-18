@@ -53,7 +53,7 @@ const Volunteer = () => {
           <h1 style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>
             {t('volunteer.subtitle-3')}
           </h1>
-          <FormikProvider>
+          <FormikProvider value={null}>
             <CustomForm
               firstNameLabel="form.first"
               lastNameLabel="form.last"
@@ -63,8 +63,8 @@ const Volunteer = () => {
               messageLabel="form.message"
               ageLabel="form.age"
               submitLabel="form.submit"
+              formType="Volunteer"
             />
-
           </FormikProvider>
         </div>
       </div>

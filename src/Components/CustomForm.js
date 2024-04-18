@@ -1,6 +1,5 @@
-// CustomForm component
-
 import React from 'react';
+import emailjs from 'emailjs-com';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useTranslation } from 'react-i18next';
 import { basicSchema } from '../schema';
@@ -13,13 +12,22 @@ const CustomForm = ({
   typeLabel,
   messageLabel,
   ageLabel,
-  submitLabel
+  submitLabel,
+  formType
 }) => {
   const { t } = useTranslation();
 
   const onSubmit = async (values, actions) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    actions.resetForm();
+    try {
+      let subject = `${formType} Form`;
+      const emailValues = { ...values, subject: subject, formType: formType };
+      await emailjs.send('service_omqyjro', 'template_7v2h6z8', emailValues, '-eacAiqGiTr84k5tV');
+      actions.resetForm();
+      alert('Form submitted successfully!');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error submitting form. Please try again later.');
+    }
   };
 
   return (
@@ -31,14 +39,15 @@ const CustomForm = ({
         phoneNumber: '',
         volunteeringType: '',
         message: '',
-        over18: false
+        over18: false,
+        formType: ''
       }}
       validationSchema={basicSchema}
       onSubmit={onSubmit}
     >
-      {({ isSubmitting, errors, touched }) => (
+      {({ isSubmitting }) => (
         <Form>
-          <div className={`mb-3 ${errors.firstName && touched.firstName ? 'is-invalid' : ''}`}>
+          <div className="mb-3">
             <label htmlFor="firstName" className="form-label">{t(firstNameLabel)}</label>
             <Field
               name="firstName"
@@ -48,7 +57,7 @@ const CustomForm = ({
             />
             <ErrorMessage name="firstName" component="p" className='text-danger' />
           </div>
-          <div className={`mb-3 ${errors.lastName && touched.lastName ? 'is-invalid' : ''}`}>
+          <div className="mb-3">
             <label htmlFor="lastName" className="form-label">{t(lastNameLabel)}</label>
             <Field
               name="lastName"
@@ -58,18 +67,18 @@ const CustomForm = ({
             />
             <ErrorMessage name="lastName" component="p" className='text-danger' />
           </div>
-          <div className={`mb-3 ${errors.email && touched.email ? 'is-invalid' : ''}`}>
+          <div className="mb-3">
             <label htmlFor="email" className="form-label">{t(emailLabel)}</label>
             <Field
               name="email"
               type="email"
               className={`form-control`}
               id="email"
-              placeholder='example@email.com'
+              placeholder="example@email.com"
             />
             <ErrorMessage name="email" component="p" className='text-danger' />
           </div>
-          <div className={`mb-3 ${errors.phoneNumber && touched.phoneNumber ? 'is-invalid' : ''}`}>
+          <div className="mb-3">
             <label htmlFor="phoneNumber" className="form-label">{t(phoneLabel)}</label>
             <Field
               name="phoneNumber"
@@ -80,22 +89,43 @@ const CustomForm = ({
             />
             <ErrorMessage name="phoneNumber" component="p" className='text-danger' />
           </div>
-          <div className={`mb-3 ${errors.volunteeringType && touched.volunteeringType ? 'is-invalid' : 'text-danger'}`}>
-            <label htmlFor="volunteeringType" className="form-label">{t(typeLabel)}</label>
-            <Field
-              as="select"
-              className={`form-control`}
-              name="volunteeringType"
-              id="volunteeringType"
-            >
-              <option value="">{t('form.options.select')}</option>
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((option) => (
-                <option key={option} value={option}>{t(`form.options.${option}`)}</option>
-              ))}
-            </Field>
-            <ErrorMessage name="volunteeringType" component="p" className='text-danger' />
-          </div>
-          <div className={`mb-3 ${errors.message && touched.message ? 'is-invalid' : ''}`}>
+          {formType !== 'customer' && (
+            <>
+              <div className="mb-3">
+                <label htmlFor="volunteeringType" className="form-label">{t(typeLabel)}</label>
+                <Field
+                  as="select"
+                  className={`form-control`}
+                  name="volunteeringType"
+                  id="volunteeringType"
+                >
+                  <option value="">{t('form.options.select')}</option>
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((option) => (
+                    <option key={option} value={t(`form.options.${option}`)}>
+                      {t(`form.options.${option}`)}
+                    </option>
+                  ))}
+                </Field>
+                <ErrorMessage name="volunteeringType" component="p" className='text-danger' />
+              </div>
+              {ageLabel && (
+                <div className="mb-3">
+                  <div className="form-check">
+                    <Field
+                      className="form-check-input"
+                      type="checkbox"
+                      id="over18"
+                      name="over18"
+                    />
+                    <label className="form-check-label" htmlFor="over18">
+                      {t(ageLabel)}
+                    </label>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+          <div className="mb-3">
             <label htmlFor="message" className="form-label">{t(messageLabel)}</label>
             <Field
               name="message"
@@ -104,19 +134,6 @@ const CustomForm = ({
               id="message"
               rows="3"
             />
-          </div>
-          <div className={`mb-3 ${errors.over18 && touched.over18 ? 'is-invalid' : ''}`}>
-            <div className="form-check">
-              <Field
-                className="form-check-input"
-                type="checkbox"
-                id="over18"
-                name="over18"
-              />
-              <label className="form-check-label" htmlFor="over18">
-                {t(ageLabel)}
-              </label>
-            </div>
           </div>
           <button
             disabled={isSubmitting}
