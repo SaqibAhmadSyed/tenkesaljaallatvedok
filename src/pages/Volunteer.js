@@ -63,7 +63,7 @@ const Volunteer = () => {
               messageLabel="form.message"
               ageLabel="form.age"
               submitLabel="form.submit"
-              formType="Volunteer"
+              formType="volunteer"
             />
           </FormikProvider>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useTranslation } from 'react-i18next';
-import { basicSchema } from '../schema';
+import { extendedSchema } from '../schema';
 
 const CustomForm = ({
   firstNameLabel,
@@ -20,8 +20,17 @@ const CustomForm = ({
   const onSubmit = async (values, actions) => {
     try {
       let subject = `${formType} Form`;
+      let templateId = '';
+      
+      // Set templateId based on formType
+      if (formType === 'contact') {
+        templateId = 'template_0s3ny78'; // Contact form template ID
+      } else if (formType === 'colunteer') {
+        templateId = 'template_7v2h6z8'; // Volunteer form template ID
+      }
+
       const emailValues = { ...values, subject: subject, formType: formType };
-      await emailjs.send('service_omqyjro', 'template_7v2h6z8', emailValues, '-eacAiqGiTr84k5tV');
+      await emailjs.send('service_omqyjro', templateId, emailValues, '-eacAiqGiTr84k5tV');
       actions.resetForm();
       alert('Form submitted successfully!');
     } catch (error) {
@@ -29,22 +38,20 @@ const CustomForm = ({
       alert('Error submitting form. Please try again later.');
     }
   };
-
   return (
-    <Formik
-      initialValues={{
-        firstName: '',
-        lastName: '',
-        email: '',
-        phoneNumber: '',
-        volunteeringType: '',
-        message: '',
-        over18: false,
-        formType: ''
-      }}
-      validationSchema={basicSchema}
-      onSubmit={onSubmit}
-    >
+<Formik
+  initialValues={{
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    volunteeringType: '', // Include the volunteeringType field in initialValues
+    message: '',
+    formType: ''
+  }}
+  validationSchema={extendedSchema(formType)} // Use extendedSchema here
+  onSubmit={onSubmit}
+>
       {({ isSubmitting }) => (
         <Form>
           <div className="mb-3">
@@ -89,41 +96,39 @@ const CustomForm = ({
             />
             <ErrorMessage name="phoneNumber" component="p" className='text-danger' />
           </div>
-          {formType !== 'customer' && (
-            <>
-              <div className="mb-3">
-                <label htmlFor="volunteeringType" className="form-label">{t(typeLabel)}</label>
+          {typeLabel && formType !== 'customer' && formType !== 'contact' && (
+            <div className="mb-3">
+              <label htmlFor="volunteeringType" className="form-label">{t(typeLabel)}</label>
+              <Field
+                as="select"
+                className={`form-control`}
+                name="volunteeringType"
+                id="volunteeringType"
+              >
+                <option value="">{t('form.options.select')}</option>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((option) => (
+                  <option key={option} value={t(`form.options.${option}`)}>
+                    {t(`form.options.${option}`)}
+                  </option>
+                ))}
+              </Field>
+              <ErrorMessage name="volunteeringType" component="p" className='text-danger' />
+            </div>
+          )}
+          {ageLabel && formType !== 'contact' && (
+            <div className="mb-3">
+              <div className="form-check">
                 <Field
-                  as="select"
-                  className={`form-control`}
-                  name="volunteeringType"
-                  id="volunteeringType"
-                >
-                  <option value="">{t('form.options.select')}</option>
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((option) => (
-                    <option key={option} value={t(`form.options.${option}`)}>
-                      {t(`form.options.${option}`)}
-                    </option>
-                  ))}
-                </Field>
-                <ErrorMessage name="volunteeringType" component="p" className='text-danger' />
+                  className="form-check-input"
+                  type="checkbox"
+                  id="over18"
+                  name="over18"
+                />
+                <label className="form-check-label" htmlFor="over18">
+                  {t(ageLabel)}
+                </label>
               </div>
-              {ageLabel && (
-                <div className="mb-3">
-                  <div className="form-check">
-                    <Field
-                      className="form-check-input"
-                      type="checkbox"
-                      id="over18"
-                      name="over18"
-                    />
-                    <label className="form-check-label" htmlFor="over18">
-                      {t(ageLabel)}
-                    </label>
-                  </div>
-                </div>
-              )}
-            </>
+            </div>
           )}
           <div className="mb-3">
             <label htmlFor="message" className="form-label">{t(messageLabel)}</label>
