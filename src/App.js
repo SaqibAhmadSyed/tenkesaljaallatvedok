@@ -14,6 +14,8 @@ import Title from "./Components/Title";
 import { useTranslation } from 'react-i18next';
 import Volunteer from "./pages/Volunteer";
 import Contact from "./pages/Contact";
+// require('dotenv').config();
+
 
 const getCurrentImagePath = (pathname) => {
   switch (pathname) {

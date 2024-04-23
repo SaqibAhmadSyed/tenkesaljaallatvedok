@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-const nameRules = /^[a-zA-ZÀ-ÿ'\-]+$/;
+const nameRules = /^[a-zA-ZÀ-ÿ '-]+$/;
 const phoneRules = /^\+(?:[0-9] ?){6,14}[0-9](?: ?\([0-9]+\))?$/;
 
 // Define the basic schema
