@@ -39,6 +39,19 @@
         "text-6": "In addition, we warmly welcome volunteers to join our small team! 🙏 Thanks for your support and thanks for joining us! ❤️",
         "img-desc": "(Our shelter under construction)"
     },
+    "adopt": {
+        "title": "Adoptable Dog",
+        "subtitle-1": "Senior Falcó is looking for his forever home!",
+        "text-1":"He is hoping that someone will still adopt him and give him a home for the rest of his life. He is around 12 years old and a lively and active dog! He loves to take walks.❤️ He doesn't hear well, but he is very alert and nothing can escape his attention.❤️ He doesn't have big needs. He just wants to be free and sometimes snuggle a bit with his owner and loved ones. We are hoping that someone will fall in love with him as he is such a sweet dog 🙏.",
+        "subtitle-2": "Bella is looking for her forever home💞",
+        "text-2": "Unfortunately, the owners’ living situation has changed, they are moving to a sublet, they cannot take Bella with them. Bella is a friendly, playful small dog. She will be one and a half years old on November 7. We are looking for a loving owner for her. Bella is temporarily in Harkány until we will find her forever home. For further details about Bella, please call ☎️ 06202520162. Thanks for sharing!",
+        "subtitle-3": "Bobi needs a home",
+        "text-3": "Bobi is a 2-3 year old Puli-type male dog. He was brought to us in a terrible condition, after wandering for days by the busy road in the hot sun, waiting for someone to take pity on him and take him home! It's a wonder he didn't get hit by a car! He does not have a chip, based on its condition, we are not looking for its original owner! Probably no one misses him! We freed him from his smelly, heavy fur so we could finally see who was under the coat. 😊 Bobi is now smiling and waiting for his potential adopters to find him! ❤️ He is friendly, a good-natured dog, a little bigger than a Puli. He can quickly steal your heart. He is completely neutral towards other dogs. Can be walked nicely on a leash. He is vaccinated, microchipped and can be adopted with a sterilization contract! ☎️ +36 70 5876260 Siklós",
+        "subtitle-4": "Little Pocok needs a home!💗",
+        "text-4": "Pocok is a very sweet, 8 year old female chihuahua 💗 When you walk her, you will fall in love with her immediately, yet no one showed interest in adopting her yet! She is a fence-climbing champion, so a \"safe\" fence is necessary, or we recommend her as an indoor dog only! She likes to walk and can walk nicely. We also recommend her to elderly people! She could be someone's loyal companion! ☎️ +36 70 5876260 Siklós",
+        "subtitle-5": "Jack needs a home 🐶",
+        "text-5": "Jack is a 1-1.5 year old, extremely friendly dog. He feels very alone here at the shelter.😔 He would be a good playmate for a dog at home! We are looking for a loving family for him! Thanks for sharing! ☎️ 06705876260 Siklós"
+    },
     "volunteer": {
         "title": "Volunteer",
         "subtitle-1": "Ways You Can Help",
@@ -85,32 +98,7 @@
     "contact": {
         "title": "Contact Us",
         "subtitle-1": "Contact Form",
-        "content-1": "Our organization is funded by donations and volunteer work. We rely on your generosity and support to be able to help all the animals in our care.",
-        "content-2": "The incoming requests can be overwhelming sometimes as well, so any help from your end will make a difference.",
-        "content-4": "Note that due to the limited funds available, volunteering is non-paid.",
-        "content-5": "You can help us in many different ways, including:",
-        "options": {
-          "1": "Walking of the dogs",
-          "2": "Spending some time with the animals",
-          "3": "Cleaning of kennels",
-          "4": "Cleaning of animals",
-          "5": "Transporting of animals",
-          "6": "Taking photos of our animals",
-          "7": "Becoming a foster home",
-          "8": "Animal grooming for dogs and cats",
-          "9": "Animal rehabilitation & training",
-          "10": "Veterinary care",
-          "11": "Administrative work",
-          "12": "Fundraising"
-        },
-        "form": {
-            "first": "First Name",
-            "last": "Last Name",
-            "email": "Email Address",
-            "phone": "Telephone",
-            "message": "Message",
-            "submit": "submit"
-          }
+        "subtitle-2": "Map Location"
     },
     "donate": {
         "title": "Donate",
@@ -202,6 +190,14 @@
             "11": "Taking care of sick animals",
             "12": "Veterinary care (from veterinarians and animal technicians)",
             "13": "Professional support (mason, carpenter, welder etc.)"
-        }
+        },
+        "title-error-1": "Captcha Error",
+        "error-1": "The reCAPTCHA has not been complete",
+        "error-2": "The reCAPTCHA has expired. Please complete the captcha again.",
+        "title-error-2": "Error",
+        "error-3": "Error submitting form. Please try again later or contact support.",
+        "title-success-1": "Form submitted successfully!",
+        "success-1": "Your form has been submitted successfully.",
+        "button": "Bezárás"
     }
 }

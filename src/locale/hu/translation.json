@@ -39,6 +39,19 @@
         "text-6": "Emellett nagy szeretettel várjuk önkéntes segítők csatlakozását is maroknyi kis csapatunkhoz! 🙏 Köszönjük, ha segítetek, köszönjük, ha csatlakoztok hozzánk! ❤️",
         "img-desc": "(Menedékünk készülőben)"
     },
+    "adopt": {
+        "title": "Örökbefogadható kutyák",
+        "subtitle-1": "Senior Falcó gazdit keres!",
+        "text-1": "Hátha valaki azt mondja, hogy hátralevő életére biztosít neki egy kis helyet! 12 év körüli életvidám és korát meghazudtolóan aktív kutyus! Imád sétálni. ❤️ Nem hall jól, de nagyon éber és semmi nem kerülheti el a figyelmét. ❤️ Neki már nincsenek nagy igényei. Csak szabadon lehessen és néha odabújjasson a gazdihoz egy kicsit! Hátha valaki megszánja, és befogadja! 🙏",
+        "subtitle-2": "Gazdikereső Bella 💞",
+        "text-2": "Sajnos a gazdik élethelyzete megváltozott, albérletbe költöznek, nem vihetik magukkal. Bella barátságos, játékos kistestű kutyus, november 7-én lesz másfél éves. Szerető gazdit keresünk neki❗️ Bella gazdisodásig ideiglenesen Harkányban van. Érdeklődni az alábbi számon kérjük: ☎️ 06202520162 Köszönjük a megosztásokat!",
+        "subtitle-3": "Bobi gazdit keres",
+        "text-3": "Bobi gazdit keres. Bobi egy 2-3 év körüli puli jellegű fiú kutyus. Borzasztó állapotban került be hozzánk, miután napokig a forgalmas út mellett kóborolt a tűző napon, és várta, hátha valaki megsajnálja és elviszi onnan! Csoda, hogy nem ütötték el! Chipje nincs, az állapota alapján nem keressük az eredeti gazdáját! Valószínűleg nem is hiányzik senkinek! Jó egy kilónyi összeragadt, büdös szőrtől szabadítottuk meg, hogy lássuk végre, ki van a bunda alatt. 😊 Bobi most már mosolyogva várja a gazdijelölteket! ❤️ Barátságos, jópofa kutyus, a pulinál egy kicsit nagyobb. Hamar be tudja lopni magát az ember szívébe. Más kutyusokkal szemben teljesen semleges. Pórázon szépen sétáltatható. Oltva, chipelve, ivartalanítási szerződéssel fogadható örökbe! ☎️ +36 70 5876260 Siklós",
+        "subtitle-4": "Kicsi Pocok gazdit keres 💗",
+        "text-4": "Pocok egy tüneményes, 8 év körüli lány csivava. Azonnal megszeretteti magát sétáltatóival, mégse jelentkezik érte senki! Egy kerítésmászó bajnok, úgyhogy “biztonságos” kerítésre van szükség, vagy csak benti kutyusnak ajánljuk! Szeret sétálni, szépen sétáltatható. Idősebbeknek is ajánljuk! Hűséges társa lehetne valakinek! ☎️ +36 70 5876260 Siklós",
+        "subtitle-5": "Jack gazdit keres 🐶",
+        "text-5": "Jack 1-1,5 év körüli, végtelenül barátságos kutyus. Nagyon egyedül érzi itt magát.😔 Jó játszópajtása lenne egy otthoni kutyusnak! Szerető családot keresünk neki! Köszönjük a megosztást! ☎️ 06705876260 Siklós"
+    },
     "volunteer": {
         "title": "Legyen Önkéntes",
         "subtitle-1": "Módok, Hogyan Segíthetsz",
@@ -97,6 +110,11 @@
         "content-8": "Kattintson ide",
         "content-9": "a részletes listát láthassa, hogy mire van a legnagyobb szükségünk a menhelyünkön.",
         "link": "Tárgyak adományozása hozzánk"
+    },
+    "contact": {
+        "title": "Elérhetőségeink",
+        "subtitle-1": "kapcsolatfelvétel",
+        "subtitle-2": "Elhelyezkedés a térképen"
     },
     "donate-to-us": {
         "title": "Tárgyi támogatás",
@@ -173,6 +191,13 @@
             "11": "Beteg állatok gondozása",
             "12": "Állatorvosi ellátás (állatorvosoktól és állatgondozóktól)",
             "13": "Szakmai támogatás (kőműves, asztalos, hegesztő stb.)"
-        }
+        },
+        "title-error-1": "Captcha hiba",
+        "error-1": "A reCAPTCHA nincs teljesen kitöltve",
+        "error-2": "A reCAPTCHA lejárt. Kérlek, töltsd ki újra a captchát",
+        "title-error-2": "Hiba",
+        "error-3": "Hiba az űrlap beküldésekor. Kérlek, próbáld újra később, vagy lépj kapcsolatba a támogatással.",
+        "title-success-1": "Az űrlap sikeresen elküldve!",
+        "success-1": "Az űrlapod sikeresen elküldve."
     }
 }

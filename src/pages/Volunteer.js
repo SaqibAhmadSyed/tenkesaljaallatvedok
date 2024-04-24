@@ -11,7 +11,7 @@ const Volunteer = () => {
     <div className="container p-5">
       <div className="row">
         {/* Details Column */}
-        <div className="col-lg-6">
+        <div className="col-lg-6 mb-5">
           <h1 style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>
             {t('volunteer.subtitle-1')}
           </h1>

@@ -20,10 +20,15 @@
   --z-fixed: 100;
 }
 
+html {
+  height: 100dvh
+}
+
 body {
   background-color: var(--body-color);
   color: var(--text-color);
   font-family: var(--body-font);
+  -webkit-overflow-scrolling: touch;
 }
 
 ul {

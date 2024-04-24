@@ -18,6 +18,15 @@ const NavbarHook = () => {
   // Function to toggle the mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      // Disable scrolling when the mobile menu is open
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Enable scrolling when the mobile menu is closed
+      document.documentElement.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';
+    }
   };
 
   // Function to close the mobile menu when a link is clicked
