@@ -1,24 +1,18 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 
-const CustomCard = ({ imgUrl, title,  body, direction }) => {
-  const isRtl = direction === 'rtl';
-  const rowClass = isRtl ? 'flex-row-reverse' : '';
+const CustomCard = ({ imgUrl, title, body }) => {
 
   return (
-    <Card className="shadow mb-5">
-      <div className={`row no-gutters ${rowClass}`}>
-        <div className="col-md-4">
-          <Card.Img variant="top" src={imgUrl} />
-        </div>
-        <div className="col-md-8">
-            <Card.Title className='text-center p-4 mt-2'  style={{ color: '#58c459', fontWeight: '600', fontSize:'32px' }}>{title}</Card.Title>
-          <Card.Body>
-            <p><br></br>{body}</p>
-          </Card.Body>
-        </div>
-      </div>
-    </Card>
+    <Col md={12} className="mb-3">
+      <Card className="shadow">
+        <Card.Img variant="top" src={imgUrl} />
+        <Card.Body>
+          <Card.Title className='text-center mt-2 mb-3' style={{ color: '#58c459', fontWeight: '600', fontSize: '27px' }}>{title}</Card.Title>
+          <Card.Text className='m-3' style={{fontSize: '17px'}}>{body}</Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
   );
 }
 

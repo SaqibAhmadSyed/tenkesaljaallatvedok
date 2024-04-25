@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, ListGroup } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import CustomCard from '../Components/CustomCard';
 
@@ -8,37 +7,46 @@ const AdoptableDog = () => {
 
     return (
         <div className='container p-5'>
-            <CustomCard 
-            className="mb-5"
-            imgUrl={"../img/falco.png"}
-            title={t('adopt.subtitle-1')}
-            body={t('adopt.text-1')}
-            direction={"ltr"}
-            />
-            <CustomCard 
-            imgUrl={"../img/bella.jpg"}
-            title={t('adopt.subtitle-2')}
-            body={t('adopt.text-2')}
-            direction={"rtl"}
-            />
-            <CustomCard 
-            imgUrl={"../img/bobi.jpg"}
-            title={t('adopt.subtitle-3')}
-            body={t('adopt.text-3')}
-            direction={"ltr"}
-            />
-            <CustomCard 
-            imgUrl={"../img/pocok.png"}
-            title={t('adopt.subtitle-4')}
-            body={t('adopt.text-4')}
-            direction={"rtl"}
-            />
-            <CustomCard 
-            imgUrl={"../img/jack.png"}
-            title={t('adopt.subtitle-5')}
-            body={t('adopt.text-5')}
-            direction={"ltr"}
-            />
+            <div className='row justify-content-center'> {/* Center the row */}
+                <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
+                    <CustomCard 
+                        imgUrl={"../img/falco.png"}
+                        title={t('adopt.subtitle-1')}
+                        body={t('adopt.text-1')}
+                    />
+                </div>
+                <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
+                    <CustomCard 
+                        imgUrl={"../img/bella.jpg"}
+                        title={t('adopt.subtitle-2')}
+                        body={t('adopt.text-2')}
+                    />
+                </div>
+                <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
+                    <CustomCard 
+                        imgUrl={"../img/jack.png"}
+                        title={t('adopt.subtitle-5')}
+                        body={t('adopt.text-5')}
+                    />
+                </div>
+
+            </div>
+            <div className='row justify-content-center'> {/* Center the row */}
+                <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
+                    <CustomCard 
+                        imgUrl={"../img/pocok.png"}
+                        title={t('adopt.subtitle-4')}
+                        body={t('adopt.text-4')}
+                    />
+                </div>
+                <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
+                    <CustomCard 
+                        imgUrl={"../img/bobi.jpg"}
+                        title={t('adopt.subtitle-3')}
+                        body={t('adopt.text-3')}
+                    />
+                </div>
+            </div>
         </div>
     );
 };

@@ -13,6 +13,7 @@ import DonateToUs from "./pages/DonateToUs";
 import Volunteer from "./pages/Volunteer";
 import Contact from "./pages/Contact";
 import AdoptableDog from "./pages/AdoptableDog";
+import HappyStories from "./pages/HappyStories";
 import Title from "./Components/Title";
 import { useTranslation } from 'react-i18next';
 
@@ -23,6 +24,8 @@ const getCurrentImagePath = (pathname) => {
       return { imagePath: "../img/title/about-us.jpg", titleKey: "about.title" };
     case "/adopt":
       return { imagePath: "../img/title/adopt.png", titleKey: "adopt.title" };
+      case "/happy-stories":
+        return { imagePath: "../img/title/happy-stories.jpg", titleKey: "happy-stories.title" };
     case "/become-a-foster-home":
       return { imagePath: "../img/title/foster.jpg", titleKey: "foster.title" };
     case "/volunteer":
@@ -58,6 +61,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<Aboutus />} />
           <Route path="/adopt" element={<AdoptableDog />} />
+          <Route path="/happy-stories" element={<HappyStories />} />
           <Route path="/in-memoriam" element={<InMemoriam />} />
           <Route path="/become-a-foster-home" element={<FosterHome />} />
           <Route path="/volunteer" element={<Volunteer />} />
