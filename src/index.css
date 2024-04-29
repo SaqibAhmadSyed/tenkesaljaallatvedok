@@ -48,3 +48,38 @@ a {
 .footer {
   width: 100%;
 }
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1006px; /* Adjusted font size for larger arrows */
+    color: #000;
+    z-index: 1000;
+}
+
+.owl-prev {
+    left: 10px;
+}
+
+.owl-next {
+    right: 10px;
+}
+
+.title__img-visible {
+  opacity: 0.2;
+  max-height: 400px;
+  width: 100%;
+  z-index: 100;
+  object-fit: cover;
+  transition: opacity 0.8s ease; /* Increase the duration to make the transition slower */
+}
+
+.title__img-hidden {
+  opacity: 0;
+  max-height: 400px;
+  width: 100%;
+  z-index: 100;
+  object-fit: cover;
+}

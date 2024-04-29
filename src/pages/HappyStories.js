@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -7,7 +7,7 @@ import CustomCard from '../Components/CustomCard';
 
 const HappyStories = () => {
     const { t } = useTranslation();
-
+    
     const cardData = [
         {
             imgUrl: "../img/puffi.png",
@@ -47,7 +47,6 @@ const HappyStories = () => {
                 className='owl-theme'
                 loop
                 margin={10}
-                nav={false}
                 responsive={{
                     0: { items: 1 },
                     800: { items: 2 },
@@ -58,13 +57,10 @@ const HappyStories = () => {
                 {/* Carousel items */}
                 {cardData.map((card, index) => (
                     <div key={index} className='item'>
-                        <CustomCard imgUrl={card.imgUrl} title={card.title} body={card.body} />
+                        <CustomCard imgUrl={card.imgUrl} title={card.title} body={card.body}/>
                     </div>
                 ))}
             </OwlCarousel>
-
-
-
         </div>
     );
 }

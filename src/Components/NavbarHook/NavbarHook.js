@@ -20,21 +20,21 @@ const NavbarHook = () => {
     setIsMenuOpen(!isMenuOpen);
     if (!isMenuOpen) {
       // Disable scrolling when the mobile menu is open
-      document.documentElement.style.overflow = 'hidden';
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('overflow-hidden');
     } else {
       // Enable scrolling when the mobile menu is closed
-      document.documentElement.style.overflow = 'auto';
-      document.body.style.overflow = 'auto';
+      document.body.classList.remove('overflow-hidden');
     }
   };
-
-  // Function to close the mobile menu when a link is clicked
+  
   const closeMobileMenu = () => {
     if (isMobile) {
       setIsMenuOpen(false);
+      // Remove overflow-hidden class to re-enable scrolling
+      document.body.classList.remove('overflow-hidden');
     }
   };
+  
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -170,7 +170,7 @@ const NavbarHook = () => {
         {/* Toggle menu icon for mobile */}
         {isMobile && (
           <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-            <IoMenu style={{color: 'white'}}/>
+            <IoMenu style={{ color: 'white' }} />
           </div>
         )}
 
@@ -183,11 +183,10 @@ const NavbarHook = () => {
             {renderNavLinks()}
             {/* Close menu icon for mobile */}
             <div className="nav__close" id="nav-close" onClick={toggleMenu}>
-              <IoClose style={{color: 'white'}}/>
+              <IoClose style={{ color: 'white' }} />
             </div>
           </div>
         ) : (
-          // Render regular navigation links if not mobile
           renderNavLinks()
         )}
       </div>

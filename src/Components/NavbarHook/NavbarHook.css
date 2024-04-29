@@ -172,3 +172,10 @@
     font-size: 12px;
   }
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-auto {
+  overflow: auto;
+}

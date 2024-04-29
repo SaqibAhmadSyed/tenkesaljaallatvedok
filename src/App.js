@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import "./index.css";
 import Navbar from "./Components/Navbar/Navbar";
 import NavbarHook from "./Components/NavbarHook/NavbarHook";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import Aboutus from "./pages/Aboutus";
 import InMemoriam from "./pages/Memoriam";
 import Footer from "./Components/Footer/Footer";
@@ -24,8 +24,10 @@ const getCurrentImagePath = (pathname) => {
       return { imagePath: "../img/title/about-us.jpg", titleKey: "about.title" };
     case "/adopt":
       return { imagePath: "../img/title/adopt.png", titleKey: "adopt.title" };
-      case "/happy-stories":
+    case "/happy-stories":
         return { imagePath: "../img/title/happy-stories.jpg", titleKey: "happy-stories.title" };
+    case "/in-memoriam":
+          return { imagePath: "../img/title/memoriam.jpg", titleKey: "memoriam.title" };
     case "/become-a-foster-home":
       return { imagePath: "../img/title/foster.jpg", titleKey: "foster.title" };
     case "/volunteer":
