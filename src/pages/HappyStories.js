@@ -1,13 +1,31 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import CustomCard from '../Components/CustomCard';
 
 const HappyStories = () => {
     const { t } = useTranslation();
-    
+
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
     const cardData = [
         {
             imgUrl: "../img/puffi.jpg",
@@ -43,24 +61,13 @@ const HappyStories = () => {
 
     return (
         <div className='container p-5'>
-            <OwlCarousel
-                className='owl-theme'
-                loop
-                margin={10}
-                responsive={{
-                    0: { items: 1 },
-                    800: { items: 2 },
-                    1200: { items: 3 }
-                }}
-                style={{ boxShadow: 'none' }} // Add inline style to remove shadow
-            >
-                {/* Carousel items */}
+            <Carousel responsive={responsive} swipeable={true}>
                 {cardData.map((card, index) => (
-                    <div key={index} className='item'>
-                        <CustomCard imgUrl={card.imgUrl} title={card.title} body={card.body}/>
+                    <div key={index}>
+                        <CustomCard imgUrl={card.imgUrl} title={card.title} body={card.body} />
                     </div>
                 ))}
-            </OwlCarousel>
+            </Carousel>
         </div>
     );
 }

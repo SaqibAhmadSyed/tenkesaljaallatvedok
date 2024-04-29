@@ -49,24 +49,6 @@ a {
   width: 100%;
 }
 
-.owl-prev,
-.owl-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1006px; /* Adjusted font size for larger arrows */
-    color: #000;
-    z-index: 1000;
-}
-
-.owl-prev {
-    left: 10px;
-}
-
-.owl-next {
-    right: 10px;
-}
-
 .title__img-visible {
   opacity: 0.2;
   max-height: 500px;
@@ -84,4 +66,33 @@ a {
   object-fit: cover;
 }
 
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
 
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
