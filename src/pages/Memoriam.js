@@ -9,7 +9,7 @@ const Memoriam = () => {
             <div className="row justify-content-center">
                 <div className="col-lg-4 mb-5">
                     <div className='text-center'>
-                        <img className="w-75 mb-5" src="../img/lizi.png" alt="" />
+                        <img className="w-75 mb-5" src="../img/lizi.jpg" alt="lizi" />
                     </div>
                     <p>{t('memoriam.text-1')}</p>
                     <p>{t('memoriam.text-2')}</p>
@@ -18,7 +18,7 @@ const Memoriam = () => {
                 <div className='col-2'></div>
                 <div className="col-lg-4 mb-5">
                     <div className='text-center'>
-                        <img className="w-75 mb-5" src="../img/reno.png" alt="" />
+                        <img className="w-75 mb-5" src="../img/reno.jpg" alt="reno" />
                     </div>
                     <p>{t('memoriam.text-4')}</p>
                     <p>{t('memoriam.text-5')}</p>

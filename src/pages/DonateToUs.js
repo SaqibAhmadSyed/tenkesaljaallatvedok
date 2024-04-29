@@ -32,7 +32,7 @@ const DonateToUs = () => {
                             <div className="row mb-4">
                                 <div className="col-sm-4">
                                     <Card>
-                                        <Card.Img variant="top" src="../img/dog-food.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                        <Card.Img variant="top" src="../img/dog-food.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                         <Card.Body>
                                             <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.food.title')}</Card.Title>
                                             <ListGroup variant="flush">
@@ -46,7 +46,7 @@ const DonateToUs = () => {
                                 </div>
                                 <div className="col-sm-4">
                                     <Card>
-                                        <Card.Img variant="top" src="../img/accessories-dog.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                        <Card.Img variant="top" src="../img/accessories-dog.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                         <Card.Body>
                                             <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.accessories.title')}</Card.Title>
                                             <ListGroup variant="flush">
@@ -66,7 +66,7 @@ const DonateToUs = () => {
                                 </div>
                                 <div className="col-sm-4">
                                     <Card>
-                                        <Card.Img variant="top" src="../img/medical-device.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                        <Card.Img variant="top" src="../img/medical-device.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                         <Card.Body>
                                             <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.medicines.title')}</Card.Title>
                                             <ListGroup variant="flush">
@@ -88,7 +88,7 @@ const DonateToUs = () => {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <Card className="">
-                                        <Card.Img variant="top" src="../img/clean-tool.png" style={{ maxHeight: '350px' }} />
+                                        <Card.Img variant="top" src="../img/clean-tool.jpg" style={{ maxHeight: '350px' }} />
                                         <Card.Body>
                                             <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.cleaning.title')}</Card.Title>
                                             <ListGroup variant="flush">
@@ -112,7 +112,7 @@ const DonateToUs = () => {
                         <div className="row mb-4">
                             <div className="col-sm-12 mb-3">
                                 <Card>
-                                    <Card.Img variant="top" src="../img/dog-food.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                    <Card.Img variant="top" src="../img/dog-food.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                     <Card.Body>
                                         <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.food.title')}</Card.Title>
                                         <ListGroup variant="flush">
@@ -126,7 +126,7 @@ const DonateToUs = () => {
                             </div>
                             <div className="col-sm-12">
                                 <Card>
-                                    <Card.Img variant="top" src="../img/medical-device.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                    <Card.Img variant="top" src="../img/medical-device.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                     <Card.Body>
                                         <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.medicines.title')}</Card.Title>
                                         <ListGroup variant="flush">
@@ -148,7 +148,7 @@ const DonateToUs = () => {
                         <div className="row mb-4">
                             <div className="col-sm-12 mb-3">
                                 <Card>
-                                    <Card.Img variant="top" src="../img/accessories-dog.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                    <Card.Img variant="top" src="../img/accessories-dog.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                     <Card.Body>
                                         <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.accessories.title')}</Card.Title>
                                         <ListGroup variant="flush">
@@ -168,7 +168,7 @@ const DonateToUs = () => {
                             </div>
                             <div className="col-sm-12">
                                 <Card>
-                                    <Card.Img variant="top" src="../img/clean-tool.png" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
+                                    <Card.Img variant="top" src="../img/clean-tool.jpg" style={{ maxHeight: '350px' }} /> {/* Adjust max height */}
                                     <Card.Body>
                                         <Card.Title style={{ color: '#58c459', fontWeight: '600', textAlign: 'center' }}>{t('donate-to-us.cleaning.title')}</Card.Title>
                                         <ListGroup variant="flush">

@@ -10,22 +10,22 @@ const HappyStories = () => {
     
     const cardData = [
         {
-            imgUrl: "../img/puffi.png",
+            imgUrl: "../img/puffi.jpg",
             title: t('happy-stories.subtitle-1'),
             body: t('happy-stories.text-1')
         },
         {
-            imgUrl: "../img/picur.png",
+            imgUrl: "../img/picur.jpg",
             title: t('happy-stories.subtitle-2'),
             body: t('happy-stories.text-2')
         },
         {
-            imgUrl: "../img/potyi.png",
+            imgUrl: "../img/potyi.jpg",
             title: t('happy-stories.subtitle-3'),
             body: t('happy-stories.text-3')
         },
         {
-            imgUrl: "../img/blanca.png",
+            imgUrl: "../img/blanca.jpg",
             title: t('happy-stories.subtitle-4'),
             body: t('happy-stories.text-4')
         },
@@ -35,7 +35,7 @@ const HappyStories = () => {
             body: t('happy-stories.text-5')
         },
         {
-            imgUrl: "../img/lexi.png",
+            imgUrl: "../img/lexi.jpg",
             title: t('happy-stories.subtitle-6'),
             body: t('happy-stories.text-6')
         },

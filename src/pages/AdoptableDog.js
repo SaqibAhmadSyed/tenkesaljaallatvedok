@@ -10,7 +10,7 @@ const AdoptableDog = () => {
             <div className='row justify-content-center'> {/* Center the row */}
                 <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
                     <CustomCard 
-                        imgUrl={"../img/falco.png"}
+                        imgUrl={"../img/falco.jpg"}
                         title={t('adopt.subtitle-1')}
                         body={t('adopt.text-1')}
                     />
@@ -24,7 +24,7 @@ const AdoptableDog = () => {
                 </div>
                 <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
                     <CustomCard 
-                        imgUrl={"../img/jack.png"}
+                        imgUrl={"../img/jack.jpg"}
                         title={t('adopt.subtitle-5')}
                         body={t('adopt.text-5')}
                     />
@@ -34,7 +34,7 @@ const AdoptableDog = () => {
             <div className='row justify-content-center'> {/* Center the row */}
                 <div className="col-lg-4 mb-4"> {/* Adjusted column size to col-lg-4 */}
                     <CustomCard 
-                        imgUrl={"../img/pocok.png"}
+                        imgUrl={"../img/pocok.jpg"}
                         title={t('adopt.subtitle-4')}
                         body={t('adopt.text-4')}
                     />

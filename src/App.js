@@ -23,7 +23,7 @@ const getCurrentImagePath = (pathname) => {
     case "/about-us":
       return { imagePath: "../img/title/about-us.jpg", titleKey: "about.title" };
     case "/adopt":
-      return { imagePath: "../img/title/adopt.png", titleKey: "adopt.title" };
+      return { imagePath: "../img/title/adopt.jpg", titleKey: "adopt.title" };
     case "/happy-stories":
         return { imagePath: "../img/title/happy-stories.jpg", titleKey: "happy-stories.title" };
     case "/in-memoriam":
@@ -37,7 +37,7 @@ const getCurrentImagePath = (pathname) => {
     case "/contact":
       return { imagePath: "../img/title/contact.jpg", titleKey: "contact.title" };
     case "/donate":
-      return { imagePath: "../img/title/donate.png", titleKey: "donate.title" };
+      return { imagePath: "../img/title/donate.jpg", titleKey: "donate.title" };
     default:
       return { imagePath: "../img/title/home.jpg", titleKey: "home.title" };
   }
