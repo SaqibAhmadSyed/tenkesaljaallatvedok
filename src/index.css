@@ -69,17 +69,19 @@ a {
 
 .title__img-visible {
   opacity: 0.2;
-  max-height: 400px;
+  max-height: 500px;
   width: 100%;
   z-index: 100;
   object-fit: cover;
-  transition: opacity 0.8s ease; /* Increase the duration to make the transition slower */
+  transition: opacity 0.8s ease; 
 }
 
 .title__img-hidden {
   opacity: 0;
-  max-height: 400px;
+  max-height: 500px;
   width: 100%;
   z-index: 100;
   object-fit: cover;
 }
+
+

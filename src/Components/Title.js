@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-
 const Title = ({ title, imagePath }) => {
-    // State to store whether it's a small screen or not
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [showImage, setShowImage] = useState(false);
     const location = useLocation();
@@ -22,6 +20,7 @@ const Title = ({ title, imagePath }) => {
         };
     }, []); // Empty dependency array ensures effect only runs on mount and unmount
 
+    // Effect to show image after a delay when pathname changes
     useEffect(() => {
         setShowImage(false); // Initially hide the image
         // Delay showing the image to ensure the transition effect is visible
@@ -39,7 +38,9 @@ const Title = ({ title, imagePath }) => {
                 transform: "translate(-50%, -50%)", color: "white", zIndex: "1", fontWeight: "600", textAlign: "center" }} className='title__text'>
                 {title}
             </h1>
-            <img src={imagePath} alt="" className={showImage ? "title__img-visible" : "title__img-hidden"} />
+            <div className="image-container"> {/* Wrap the image with a container */}
+                <img src={imagePath} alt="" className={showImage ? "title__img-visible" : "title__img-hidden"} />
+            </div>
         </div>
     );
 }

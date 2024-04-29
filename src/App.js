@@ -35,7 +35,7 @@ const getCurrentImagePath = (pathname) => {
     case "/donating-items-to-us":
       return { imagePath: "../img/title/donate-to-us.jpg", titleKey: "donate-to-us.title" };
     case "/contact":
-      return { imagePath: "../img/title/contact.png", titleKey: "contact.title" };
+      return { imagePath: "../img/title/contact.jpg", titleKey: "contact.title" };
     case "/donate":
       return { imagePath: "../img/title/donate.png", titleKey: "donate.title" };
     default:
