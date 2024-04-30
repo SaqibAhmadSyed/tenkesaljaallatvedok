@@ -199,7 +199,7 @@
         "type": "Type of volunteering I am interested in",
         "message": "Message",
         "age": "Are you over 18?",
-        "submit": "submit",
+        "submit": "Submit",
         "options": {
             "select": "What would you like to help us with?",
             "1": "Transporting of animals",

@@ -148,7 +148,7 @@ const NavbarHook = () => {
           <NavLink
             className={buttonClassName}
             onClick={toggleLanguage}>
-            {i18n.language === 'en' ? t('hungarian') : t('English')}
+            {i18n.language === 'en' ? t('Hungarian') : t('English')}
           </NavLink>
         </li>
       </ul>
