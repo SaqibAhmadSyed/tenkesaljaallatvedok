@@ -71,7 +71,7 @@ const CustomForm = ({
       }
   
       const emailValues = { ...values, subject: subject, formType: formType };
-      await emailjs.send('service_omqyjro', templateId, emailValues, '-eacAiqGiTr84k5tV');
+      await emailjs.send('service_4ya7lnb', templateId, emailValues, '5nz4C0daK6djVDCuk');
   
       actions.resetForm();
       setTitle(t('form.title-success-1'));
