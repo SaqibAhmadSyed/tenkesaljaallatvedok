@@ -72,7 +72,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="sb__footer-below-links">
-                        <div><p>{t('footer.created')} Consultation S.O.S.</p></div>
+                        <div><p>{t('footer.created')} <a href="https://consultationsos.com">Consultation S.O.S.</a></p></div>
                     </div>
                 </div>
             </div>

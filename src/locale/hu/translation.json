@@ -24,7 +24,7 @@
         "transfer1": "Külföldi utalás esetén: IBAN: HU23 1040 2434 5052 6777 8748 1014",
         "transfer2": "SWIFT KÓD: OKHBHUHB",
         "rights": "Minden jog fenntartva",
-        "created": "Weboldal Létrehozta"
+        "created": "Honlapkészítés: "
     },
     "home": {
         "title": "Tenkesalja Állatvédő Egyesület "
@@ -69,12 +69,12 @@
     },
     "memoriam": {
         "title": "Akiknek nem sikerült",
-        "text-1": "Búcsúzunk Rénótól. Sajnos 2021 február 21.-én reggel meghalt Lizi kutyusunk. Tegnap este még izgatottan vártad a vacsorát a többiekkel és ma reggel már nem vártál minket a kifutóban! Kérjük fogadj örökbe állatkákat hogy legyen egy esélyük meglátni milyen egy családban élni es szeretve lenni. 🌈",
-        "text-2": "lizi gazdiker eső A legtöbben átnéznek a menhelyek kenneljeiben várakozó nagyméretű és meglett korú kutyákon. Szinte esélytelen nekik gazdára találni! Pedig az idősebb kutya kevesebb gondot tud okozni és mindent túlszárnyaló a ragaszkodása! Az idősebb kutya szinte azonnal hűséges társ tud lenni! Lizi 8 éves. SEGÍTSETEK NEKI ÚJ OTTHONT TALÁLNI!FIATAL MÉG AHHOZ, HOGY AZ ÉLETÉT MENHELYEN ÉLJE LE!",
-        "text-3": "Menhely: Tenkesalja Állatvédő Egyesület | Tel: 70/ 587-6260 ( Siklós ) ☎️",
+        "text-1": "Búcsúzunk Lizitől. Sajnos 2021 február 21.-én reggel meghalt Lizi kutyusunk. Tegnap este még izgatottan vártad a vacsorát a többiekkel és ma reggel már nem vártál minket a kifutóban! Kérjük fogadj örökbe állatkákat hogy legyen egy esélyük meglátni milyen egy családban élni es szeretve lenni.",
+        "text-2": "LIZI GAZDIKERESŐ A legtöbben átnéznek a menhelyek kenneljeiben várakozó nagyméretű és meglett korú kutyákon. Szinte esélytelen nekik gazdára találni! Pedig az idősebb kutya kevesebb gondot tud okozni és mindent túlszárnyaló a ragaszkodása! Az idősebb kutya szinte azonnal hűséges társ tud lenni! Lizi 8 éves. SEGÍTSETEK NEKI ÚJ OTTHONT TALÁLNI! FIATAL MÉG AHHOZ, HOGY AZ ÉLETÉT MENHELYEN ÉLJE LE!",
+        "text-3": " Menhely: Tenkesalja Állatvédő Egyesület | Tel: 70/ 587-6260 ( Siklós )",
         "text-4": "Búcsúzunk Rénótól. Sajnos 2021 március végén hirtelen meghalt Rénó kutyusunk. Ő az életét a kezdetektől a végéig menhelyen töltötte. Kérjük fogadj örökbe állatkákat hogy legyen egy esélyük meglátni milyen egy családban élni es szeretve lenni.",
         "text-5": "A Tenkesalja Állatvédő Egyesület segitsegre szorul hogy oreg Reno kutyus aki cushing korban szenved, orvosi ellatasat es elelmet tudjak biztositani. Te tudnal segiteni?",
-        "text-6": "Bankszámla: 10402434-50526777-87481014"
+        "text-6": "Bankszámla: 10402434-50526777-87481014 | IBAN: HU23 SWIFT: OKHB HUHB | Tel: ☎️ 70/ 587 6260"
     },
     "volunteer": {
         "title": "Legyen Önkéntes",
